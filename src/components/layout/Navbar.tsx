@@ -47,7 +47,7 @@ const Navbar = () => {
                 {/* Desktop Links */}
                 <ul className='hidden gap-8 lg:flex'>
                     <NavItem to='/'>Home</NavItem>
-                    <NavItem to='/products'>Products</NavItem>
+                    <NavItem to='/product'>Products</NavItem>
                     <NavItem to='/contact'>Contact</NavItem>
                 </ul>
 
@@ -71,7 +71,7 @@ const Navbar = () => {
                     <NavItem onClick={() => setIsOpen(false)} to='/'>
                         Home
                     </NavItem>
-                    <NavItem onClick={() => setIsOpen(false)} to='/products'>
+                    <NavItem onClick={() => setIsOpen(false)} to='/product'>
                         Products
                     </NavItem>
                     <NavItem onClick={() => setIsOpen(false)} to='/contact'>

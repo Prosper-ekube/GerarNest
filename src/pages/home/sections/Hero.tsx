@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
                     </div>
                     {/* CTA */}
                     <div className='flex flex-col gap-5 min-w-[1360px]:flex-row min-w-[1360px]:items-center lg:gap-4'>
-                        <Button className='w-full lg:w-auto'>View Products</Button>
+                        <Button className='w-full lg:w-auto' type='button'>View Products</Button>
                         <p className='text-xs md:text-lg text-[#A8A8A8]'>Experience reliable, enterprise-grade automation.</p>
                     </div>
                     {/* Certifications */}
