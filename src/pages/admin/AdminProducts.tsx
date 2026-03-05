@@ -2,8 +2,6 @@ import { useEffect, useRef, useState } from 'react'
 import { HiSearch } from 'react-icons/hi'
 import AdminLayout from '../../components/layout/AdminLayout'
 import Button from '../../components/ui/Button'
-import Input from '../../components/ui/Input'
-import Select from '../../components/ui/Select'
 import ProductTable from './sections/ProductTable'
 import ProductForm from './sections/ProductForm'
 
