@@ -1,60 +1,57 @@
-import smart_home_living_room from '../../../assets/images/smart_living_room.png'
+import smart_living_room from '../../../assets/images/smart_living_room.jpg'
+import smart_living_room_desktop from '../../../assets/images/smart_living_room_desktop.jpg'
 
 const Hero: React.FC = () => {
-    return (
-        <section className='relative overflow-hidden pt-32 md:pt-44 pb-20 px-6 lg:px-8 bg-[#0a0a0a]'>
-            <div className='absolute top-0 right-0 w-[800px] h-[800px] bg-[#6f4ccf]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2' />
+    const buttonPrimary = 'bg-[#6f4ccf] duration-1000 ease-in-out font-semibold hover:-translate-y-1 hover:bg-[#5a3ca8] px-8 py-4 rounded-full shadow-[#6f4ccf]/40 shadow-lg text-white transition-all'
+    const buttonSecondary = 'bg-transparent duration-1000 ease-in-out border-2 border-white font-semibold hover:-translate-y-1 hover:bg-white hover:text-[#0a0a0a] px-8 py-4 rounded-full text-white transition-all'
 
-            <div className='max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10'>
-                {/* Hero Content */}
+    const statTitle = 'font-bold text-4xl text-[#6f4ccf]'
+    const statText = 'text-[#a8a8a8] text-sm'
+
+    return (
+        <section className='bg-[#0a0a0a] lg:px-8 overflow-hidden pb-20 pt-32 md:pt-44 px-6 relative'>
+            <div className='absolute bg-[#6f4ccf]/20 blur-3xl h-[800px] rounded-full right-0 top-0 translate-x-1/2 -translate-y-1/2 w-[800px]' />
+            <div className='grid gap-12 items-center lg:grid-cols-2 max-w-6xl mx-auto relative z-10'>
                 <div className='space-y-6'>
-                    <span className='inline-block bg-[#6f4ccf]/20 text-[#6f4ccf] px-6 py-2 rounded-full font-semibold text-sm'>ORVIBO-POWERED SMART LIVING</span>
-                    <h1 className='text-5xl lg:text-6xl font-bold leading-tight text-white'>
-                        Intelligent Homes for the Modern<span className='bg-gradient-to-r from-[#6f4ccf] to-[#5a3ca8] bg-clip-text text-transparent'> Nigerian Lifestyle</span>
+                    <span className='bg-[#6f4ccf]/20 font-semibold inline-block px-6 py-2 rounded-full text-[#6f4ccf] text-sm'>ORVIBO-POWERED SMART LIVING</span>
+                    <h1 className='font-bold leading-tight text-5xl text-white lg:text-6xl'>
+                        Intelligent Homes for the Modern
+                        <span className='bg-clip-text bg-gradient-to-r from-[#6f4ccf] text-transparent to-[#5a3ca8]'>{' '}Nigerian Lifestyle</span>
                     </h1>
-                    <p className='text-lg text-[#a8a8a8] leading-relaxed'>
-                        Gerar Smart Home designs and deploys integrated smart home solutions, powered by Orvibo technology, for discerning homes and premium developments across Nigeria.
+                    <p className='leading-relaxed text-[#a8a8a8] text-lg'>
+                        Gerar Smart Home designs and deploys integrated smart home solutions, powered by Orvibo technology,
+                        for discerning homes and premium developments across Nigeria.
                     </p>
                     <div className='flex flex-wrap gap-4'>
-                        <a className='bg-[#6f4ccf] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5a3ca8] transition-all hover:-translate-y-1 shadow-lg shadow-[#6f4ccf]/40' href='#products'>
-                            Explore Products
-                        </a>
-                        <a className='bg-transparent text-white px-8 py-4 rounded-full font-semibold border-2 border-white hover:bg-white hover:text-[#0a0a0a] transition-all hover:-translate-y-1' href='#how-it-works'>
-                            How It Works
-                        </a>
+                        <a className={buttonPrimary} href='#products'>Explore Products</a>
+                        <a className={buttonSecondary} href='#how-it-works'>How It Works</a>
                     </div>
-                    {/* Stats */}
                     <div className='flex flex-wrap gap-8 pt-8'>
                         <div>
-                            <h3 className='text-4xl font-bold text-[#6f4ccf]'>50K+</h3>
-                            <p className='text-[#a8a8a8] text-sm'>Happy Customers</p>
+                            <h3 className={statTitle}>50K+</h3>
+                            <p className={statText}>Happy Customers</p>
                         </div>
                         <div>
-                            <h3 className='text-4xl font-bold text-[#6f4ccf]'>100+</h3>
-                            <p className='text-[#a8a8a8] text-sm'>Smart Devices</p>
+                            <h3 className={statTitle}>100+</h3>
+                            <p className={statText}>Smart Devices</p>
                         </div>
                         <div>
-                            <h3 className='text-4xl font-bold text-[#6f4ccf]'>4.9★</h3>
-                            <p className='text-[#a8a8a8] text-sm'>Average Rating</p>
+                            <h3 className={statTitle}>4.9★</h3>
+                            <p className={statText}>Average Rating</p>
                         </div>
                     </div>
                 </div>
-                {/* Hero Visual */}
                 <div className='relative'>
-                    <div className='relative w-full h-[400px] rounded-3xl overflow-hidden group'>
-                        {/* Hero Image */}
-                        <img
-                            alt='Smart Home Interior'
-                            className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-700'
-                            src={smart_home_living_room}
-                        />
-
-                        {/* Gradient Overlay */}
-                        <div className='absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent' />
-                        {/* Floating Stats Cards */}
+                    <div className='group h-[400px] overflow-hidden relative rounded-3xl w-full'>
+                        <picture>
+                            <source media='(min-width: 768px)' srcSet={smart_living_room_desktop} />
+                            <img alt='Smart Home Interior' className='h-full object-cover transition-transform duration-700 w-full group-hover:scale-105'
+                                decoding='async' loading='lazy' src={smart_living_room} />
+                        </picture>                        
+                        <div className='absolute bg-gradient-to-t from-[#0a0a0a] inset-0 to-transparent via-transparent' />
                     </div>
                 </div>
-            </div>        
+            </div>
         </section>
     )
 }
