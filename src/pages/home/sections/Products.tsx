@@ -1,129 +1,115 @@
-import {  FaStar } from 'react-icons/fa'
-import central_scene_panel from '../../../assets/images/central_scene_panel.png'
-import glass_touch_console from '../../../assets/images/glass_touch_console.png'
-import smart_switch_1 from '../../../assets/images/smart_switch_1.png'
-import cctv_c2 from '../../../assets/images/cctv_c2.png'
-import smart_bulb from '../../../assets/images/smart_bulb.png'
-import smart_control_panel_s1 from '../../../assets/images/smart_control_panel_s1.png'
+import { FaStar } from 'react-icons/fa'
+import In_Wall_Switch from '../../../assets/images/In_Wall_Switch.png'
+import MixSwitch from '../../../assets/images/MixSwitch.png'
+import Smart_IP_Camera from '../../../assets/images/Smart_IP_Camera.png'
+import Smart_Magnetic_Chandelier from '../../../assets/images/Smart_Magnetic_Chandelier.png'
+import Smart_Magnetic_Floodlight from '../../../assets/images/Smart_Magnetic_Floodlight.png'
+import ZigBee_Mini from '../../../assets/images/ZigBee_Mini.png'
+
+type Product = {
+    category: string
+    id: number
+    image: string
+    name: string
+    price: string
+    rating: number
+    reviews: number
+}
+
+const PRODUCTS: Product[] = [
+    {
+        category: 'Smart Central Control Panels',
+        id: 1,
+        image: ZigBee_Mini,
+        name: 'ZigBee Mini Hub',
+        price: '₦1,150,000',
+        rating: 5.0,
+        reviews: 12000
+    },
+    {
+        category: 'Smart Central Control Panels',
+        id: 2,
+        image: MixSwitch,
+        name: 'MixSwitch',
+        price: '₦980,000',
+        rating: 5.0,
+        reviews: 4000
+    },
+    {
+        category: 'Home Security & Sensors',
+        id: 3,
+        image: Smart_IP_Camera,
+        name: 'Smart IP Camera',
+        price: '₦90,000',
+        rating: 4.4,
+        reviews: 2000
+    },
+    {
+        category: 'Home Security & Sensors',
+        id: 4,
+        image: Smart_Magnetic_Floodlight,
+        name: 'Smart Magnetic Floodlight',
+        price: '₦50,000',
+        rating: 4.8,
+        reviews: 100
+    },
+    {
+        category: 'Smart Switches',
+        id: 5,
+        image: In_Wall_Switch,
+        name: 'In Wall Switch',
+        price: '₦10,000',
+        rating: 5.0,
+        reviews: 60000
+    },
+    {
+        category: 'Smart Lighting',
+        id: 6,
+        image: Smart_Magnetic_Chandelier,
+        name: 'Smart Magnetic Chandelier',
+        price: '₦450,000',
+        rating: 4.8,
+        reviews: 24000
+    }
+]
 
 const Products: React.FC = () => {
-    const products = [
-        {
-            id: 1,
-            name: 'Orvibo Control Panel S1',
-            price: '₦1,150,000',
-            rating: 5.0,
-            reviews: 12000,
-            category: 'Smart Central Control Panels',
-            image: central_scene_panel
-        },
-        {
-            id: 2,
-            name: 'Orvibo Glass Touch Console',
-            price: '₦980,000',
-            rating: 5.0,
-            reviews: 4000,
-            category: 'Smart Central Control Panels',
-            image: glass_touch_console
-        },
-        {
-            id: 3,
-            name: 'Orvibo Smart Switch S1',
-            price: '₦90,000',
-            rating: 4.4,
-            reviews: 2000,
-            category: 'Smart Switches',
-            image: smart_switch_1
-        },
-        {
-            id: 4,
-            name: 'Orvibo CCTV C2',
-            price: '₦50,000',
-            rating: 4.8,
-            reviews: 100,
-            category: 'Home Security & Sensors',
-            image: cctv_c2
-        },
-        {
-            id: 5,
-            name: 'Orvibo Smart Bulb B2',
-            price: '₦10,000',
-            rating: 5.0,
-            reviews: 60000,
-            category: 'Smart Lighting',
-            image: smart_bulb
-        },
-        {
-            id: 6,
-            name: 'Orvibo Control Panel S1',
-            price: '₦450,000',
-            rating: 4.8,
-            reviews: 24000,
-            category: 'Smart Central Control Panels',
-            image: smart_control_panel_s1
-        }
-    ]
-
-
     return (
-        <section className='py-20 px-6 lg:px-8 bg-[#0a0a0a]' id='products'>
-            <div className='max-w-6xl mx-auto'>
-                <div className='text-center mb-16'>
-                    <span className='text-[#6f4ccf] font-semibold uppercase tracking-wider text-sm'>Our Products</span>
-                    <h2 className='text-4xl lg:text-5xl font-bold text-white mt-4 mb-4'>
-                        Featured Smart <span className='text-[#6f4ccf]'>Devices</span>
-                    </h2>
-                    <p className='text-[#a8a8a8] text-lg max-w-2xl mx-auto'>
-                        Discover our range of cutting-edge smart home devices designed to transform your living space
-                    </p>
+        <section className='bg-[#0a0a0a] pb-20 pt-10 lg:pt-20 px-6 lg:px-8' id='products'>
+            <div className='mx-auto max-w-6xl'>
+                <div className='mb-16 text-center'>
+                    <span className='text-[#6f4ccf] text-sm font-semibold tracking-wider uppercase'>Our Products</span>
+                    <h2 className='mt-4 mb-4 text-4xl lg:text-5xl font-bold text-white'>Featured Smart <span className='text-[#6f4ccf]'>Devices</span></h2>
+                    <p className='mx-auto max-w-2xl text-[#a8a8a8] text-lg'>Discover our range of cutting-edge smart home devices designed to transform your living space</p>
                 </div>
-
-                <div>
-                    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
-                        {products.map((product) => (
-                            <div className='bg-[#1a1a2e] border border-[#6f4ccf]/10 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-[#6f4ccf]/20 hover:-translate-y-1 hover:border-[#6f4ccf]/30 transition-all group' key={product.id}>
-                                {/* Category Badge */}
-                                <div className='relative'>
-                                    <span className='absolute top-4 right-4 bg-[#6f4ccf] text-white px-3 py-1 rounded-full text-xs font-medium z-10'>
-                                        {product.category}
-                                    </span>
-                                    {/* Product Image */}
-                                    <div className='bg-[#0f0f1a] flex items-center justify-center'>
-                                        <div className='w-full h-full rounded-xl flex items-end justify-center'>
-                                            <img src={product.image} alt={product.name} className='object-contain h-max' />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Product Info */}
-                                <div className='p-6'>
-                                    <h3 className='font-bold text-white mb-2'>{product.name}</h3>
-
-                                    {/* Rating */}
-                                    <div className='flex items-center gap-2 mb-4'>
-                                        <FaStar className='text-yellow-500 text-sm' />
-                                        <span className='text-sm text-white font-medium'>{product.rating}</span>
-                                        <span className='text-sm text-[#a8a8a8]'>({product.reviews.toLocaleString()} Reviews)</span>
-                                    </div>
-
-                                    {/* Price */}
-                                    <p className='text-2xl font-bold text-[#6f4ccf] mb-4'>${product.price}</p>
-
-                                    {/* Buttons */}
-                                    <div className='flex gap-3'>
-                                        <button className='px-4 py-2.5 border-2 border-[#6f4ccf] text-[#6f4ccf] rounded-full font-semibold text-sm hover:bg-[#6f4ccf]/10 transition-colors'>
-                                            Add to Cart
-                                        </button>
-                                        <button className='px-4 py-2.5 bg-[#6f4ccf] text-white rounded-full font-semibold text-sm hover:bg-[#5a3ca8] transition-colors'>
-                                            Buy Now
-                                        </button>
-                                    </div>
+                <div className=' gap-6 grid md:grid-cols-2 lg:grid-cols-3'>
+                    {PRODUCTS.map((product) => (
+                        <div className='duration-700 ease-in-out group flex flex-col overflow-hidden rounded-2xl border border-[#6f4ccf]/10 bg-[#1a1a2e] transition-all hover:-translate-y-1 hover:border-[#6f4ccf]/30 hover:shadow-lg hover:shadow-[#6f4ccf]/20'
+                            key={product.id}
+                        >
+                            <div className='relative'>
+                                <span className='absolute right-4 top-4 z-10 rounded-full bg-[#6f4ccf] px-3 py-1 text-xs font-medium text-white'>{product.category}</span>
+                                <div className='bg-[#0f0f1a] flex items-center justify-center h-64 pb-4 pt-14'>
+                                    <img alt={product.name} className='h-full w-full object-contain' src={product.image} />
                                 </div>
                             </div>
-                        ))}
-                    </div>
+                            <div className='flex flex-grow flex-col p-6'>
+                                <h3 className='mb-2 font-bold text-white'>{product.name}</h3>
+                                <div className='mb-4 flex items-center gap-2'>
+                                    <FaStar className='text-sm text-yellow-500' />
+                                    <span className='text-sm font-medium text-white'>{product.rating}</span>
+                                    <span className='text-sm text-[#a8a8a8]'>({product.reviews.toLocaleString()} Reviews)</span>
+                                </div>
+                                <p className='mb-4 text-2xl font-bold text-[#6f4ccf]'>{product.price}</p>
+                                <div className='mt-auto flex gap-3'>
+                                    <button className='duration-1000 ease-in-out rounded-full border-2 border-[#6f4ccf] px-4 py-2.5 text-sm font-semibold text-[#6f4ccf] transition-colors hover:bg-[#6f4ccf]/10'>Add to Cart</button>
+                                    <button className='duration-1000 ease-in-out rounded-full bg-[#6f4ccf] px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#5a3ca8]'>Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-             </div>   
+            </div>
         </section>
     )
 }
