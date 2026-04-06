@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { FaStar } from 'react-icons/fa'
-import { IoChevronDown } from 'react-icons/io5'
 import { MdStorage } from 'react-icons/md'
 import { GoArrowSwitch } from "react-icons/go";
 import { FaLightbulb } from "react-icons/fa6";
@@ -87,12 +86,12 @@ const ProductGrid: React.FC = () => {
         }
     ]
 
-    const toggleSection = (section: keyof typeof expandedSections) => {
-        setExpandedSections(prev => ({
-            ...prev,
-            [section]: !prev[section]
-        }))
-    }
+    // const toggleSection = (section: keyof typeof expandedSections) => {
+    //     setExpandedSections(prev => ({
+    //         ...prev,
+    //         [section]: !prev[section]
+    //     }))
+    // }
 
     return (
         <section className='py-20 px-6 lg:px-8 bg-[#0a0a0a] overflow-hidden'>
@@ -102,12 +101,8 @@ const ProductGrid: React.FC = () => {
                     <aside className='w-full space-y-6'>
                         {/* Category Section */}
                         <div className='border border-[#6f4ccf]/20 rounded-2xl overflow-hidden bg-[#1a1a2e]'>
-                            <button
-                                className='w-full flex items-center justify-between p-4 bg-[#1a1a2e] hover:bg-[#6f4ccf]/10 transition-colors'
-                                onClick={() => toggleSection('category')}
-                            >
-                                <h3 className='font-bold text-white'>Category</h3>
-                                <IoChevronDown className={`text-[#a8a8a8] transition-transform ${expandedSections.category ? 'rotate-180' : ''}`} />
+                            <button className='w-full flex items-center justify-between p-4 bg-[#1a1a2e]'>
+                                <h3 className='font-bold text-white'>Category</h3>                                
                             </button>
                             {expandedSections.category && (
                                 <ul className='p-4 pt-0 space-y-3'>
@@ -127,47 +122,11 @@ const ProductGrid: React.FC = () => {
                                                         {cat.count}
                                                     </span>
                                                 )}
-                                                {selectedCategory === cat.name && (
-                                                    <IoChevronDown className='text-sm' />
-                                                )}
                                             </button>
                                         </li>
                                     ))}
                                 </ul>
                             )}
-                        </div>
-
-                        {/* New Arrival */}
-                        <div className='border border-[#6f4ccf]/20 rounded-2xl overflow-hidden bg-[#1a1a2e]'>
-                            <button
-                                className='w-full flex items-center justify-between p-4 bg-[#1a1a2e] hover:bg-[#6f4ccf]/10 transition-colors'
-                                onClick={() => toggleSection('newArrivals')}
-                            >
-                                <h3 className='font-bold text-white'>New Arrival</h3>
-                                <IoChevronDown className={`text-[#a8a8a8] transition-transform ${expandedSections.newArrivals ? 'rotate-180' : ''}`} />
-                            </button>
-                        </div>
-
-                        {/* Best Seller */}
-                        <div className='border border-[#6f4ccf]/20 rounded-2xl overflow-hidden bg-[#1a1a2e]'>
-                            <button
-                                className='w-full flex items-center justify-between p-4 bg-[#1a1a2e] hover:bg-[#6f4ccf]/10 transition-colors'
-                                onClick={() => toggleSection('bestSeller')}
-                            >
-                                <h3 className='font-bold text-white'>Best Seller</h3>
-                                <IoChevronDown className={`text-[#a8a8a8] transition-transform ${expandedSections.bestSeller ? 'rotate-180' : ''}`} />
-                            </button>
-                        </div>
-
-                        {/* On Discount */}
-                        <div className='border border-[#6f4ccf]/20 rounded-2xl overflow-hidden bg-[#1a1a2e]'>
-                            <button
-                                className='w-full flex items-center justify-between p-4 bg-[#1a1a2e] hover:bg-[#6f4ccf]/10 transition-colors'
-                                onClick={() => toggleSection('onDiscount')}
-                            >
-                                <h3 className='font-bold text-white'>On Discount</h3>
-                                <IoChevronDown className={`text-[#a8a8a8] transition-transform ${expandedSections.onDiscount ? 'rotate-180' : ''}`} />
-                            </button>
                         </div>
                     </aside>
 
