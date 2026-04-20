@@ -27,7 +27,7 @@ const ProductInfo: React.FC<Props> = ({ product }) => {
                 {product.description}
             </p>
 
-            <ProductSpecs />
+            <ProductSpecs specs={product.specs}/>
             <ProductActions />
 
             <p className='border-t border-[#2a2a2a] pt-5 text-[#555] text-[13px]'>

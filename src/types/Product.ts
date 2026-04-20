@@ -12,6 +12,7 @@ export type Product = {
     description: string
     image: string
     images: ProductImage[]
+    specs: string[]
     rating: number
     reviews: number
     in_stock: boolean
