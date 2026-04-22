@@ -49,15 +49,40 @@ const ContactForm = () => {
         phone: ''
     })
 
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const [isSubmitted, setIsSubmitted] = useState(false)
+
     const handleChange = (
         e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
     ) => {
         setForm(prev => ({ ...prev, [e.target.name]: e.target.value }))
     }
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
+
+        if (isSubmitting) return
+
+        setIsSubmitting(true)
+
+        // simulate API request
+        await new Promise(resolve => setTimeout(resolve, 1500))
+
         console.log('Form submitted:', form)
+
+        setIsSubmitting(false)
+        setIsSubmitted(true)
+
+        // reset form after submit
+        setForm({
+            email: '',
+            message: '',
+            name: '',
+            phone: ''
+        })
+
+        // reset success state after a short time
+        setTimeout(() => setIsSubmitted(false), 2000)
     }
 
     return (
@@ -65,7 +90,7 @@ const ContactForm = () => {
             <h1 className='font-medium leading-[1.15] mb-10 text-4xl text-white tracking-tight lg:text-5xl'>
                 Talk to a Gerar
                 <br />
-                Smart Homes specialist. 
+                Smart Homes specialist.
             </h1>
 
             <form className='flex flex-col gap-5 w-full' onSubmit={handleSubmit}>
@@ -108,10 +133,15 @@ const ContactForm = () => {
                 </div>
 
                 <button
-                    className='active:scale-[0.98] bg-white cursor-pointer font-medium hover:bg-[#e8e8e8] mt-2 px-7 py-3.5 rounded-lg self-start text-[#0d0d0d] text-[14px] transition-all duration-200'
+                    className='active:scale-[0.98] bg-white cursor-pointer font-medium hover:bg-[#e8e8e8] mt-2 px-7 py-3.5 rounded-lg self-start text-[#0d0d0d] text-[14px] transition-all duration-200 disabled:opacity-70'
+                    disabled={isSubmitting}
                     type='submit'
                 >
-                    Send message
+                    {isSubmitting
+                        ? 'Sending...'
+                        : isSubmitted
+                            ? 'Message sent'
+                            : 'Send message'}
                 </button>
             </form>
         </div>
