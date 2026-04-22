@@ -121,5 +121,6 @@ USE_TZ = True
 STATIC_URL = 'static/'
 CORS_ALLOW_ALL_ORIGINS = True  # dev only
 
-PAYSTACK_SECRET_KEY = 'your_secret_key_here'
+PAYSTACK_SECRET_KEY = 'sk_test_2085f7e6deb3b6547bc5eec16670d59e250e9493'
+PAYSTACK_PUBLIC_KEY = 'pk_test_e4e5fe228b6475b1715f6a75fe538dce3383e9c7'
 PAYSTACK_BASE_URL = 'https://api.paystack.co'

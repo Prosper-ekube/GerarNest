@@ -46,7 +46,7 @@ class Order(models.Model):
     full_name = models.CharField(max_length=255)
     email = models.EmailField()
     amount = models.IntegerField(default=0)
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
+    status = models.CharField(max_length=20, default='pending')
 
     paystack_ref = models.CharField(max_length=100, blank=True, null=True)
 
