@@ -1,3 +1,5 @@
+import type { Product } from '../../../../types/Product'
+
 import Footer from '../../../../components/layout/Footer'
 import Navbar from '../../../../components/layout/Navbar'
 
@@ -12,7 +14,8 @@ import TrustSection from './sections/TrustSection'
 import ProductDescription from './sections/ProductDescription'
 import ReviewsSection from './sections/ReviewsSection'
 
-const ProductDetails = () => {
+const ProductDetails = ({ product }: { product: Product }) => {
+
     return (
         <>
             <Navbar />
@@ -38,7 +41,7 @@ const ProductDetails = () => {
 
                     <TrustSection />
 
-                    <RelatedProducts />
+                    <RelatedProducts category={product?.category ?? ''} currentProductId={product?.id ?? 0} />
 
                 </div>
             </main>
