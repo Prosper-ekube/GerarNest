@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, ProductImage, Order, OrderItem 
+from .models import Product, ProductImage, Order, OrderItem, Review
 
 class ProductImageInline(admin.TabularInline):
     model = ProductImage
@@ -25,3 +25,9 @@ class OrderAdmin(admin.ModelAdmin):
     list_display = ('id', 'full_name', 'email',
                     'amount', 'status', 'created_at')
     inlines = [OrderItemInline]
+
+@admin.register(Review)
+class ReviewAdmin(admin.ModelAdmin):
+    list_display = ('product', 'name', 'rating', 'created_at')
+    list_filter = ('rating',)
+    search_fields = ('name', 'text')

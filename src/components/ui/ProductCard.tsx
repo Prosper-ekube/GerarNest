@@ -39,7 +39,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                             {product.rating}
                         </span>
                         <span className='text-sm text-[#a8a8a8]'>
-                            ({product.reviews.toLocaleString()} Reviews)
+                            ({product.review_count.toLocaleString()} Reviews)
                         </span>
                     </div>
 

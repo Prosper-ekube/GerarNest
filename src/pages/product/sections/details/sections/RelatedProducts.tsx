@@ -26,15 +26,22 @@ const RelatedProducts = ({
 
                 const data: Product[] = await res.json()
 
-                console.log('FINAL STEP - DATA LENGTH:', data.length)
-
                 const relatedProducts = data.filter(product => {
-                    return product.category_display === category
+                    return (
+                        product.category === category &&
+                        product.id !== currentProductId
+                    )
                 })
 
-                setProducts(relatedProducts.slice(0, 4))
+                // optional shuffle for variety
+                const shuffled = [...relatedProducts].sort(
+                    () => Math.random() - 0.5
+                )
+
+                setProducts(shuffled.slice(0, 4))
             } catch (error) {
                 console.error('FETCH ERROR:', error)
+                setProducts([])
             } finally {
                 setLoading(false)
             }
@@ -51,8 +58,12 @@ const RelatedProducts = ({
         )
     }
 
-    if (loading) {
-        return <p className='text-white pb-24'>Loading...</p>
+    if (products.length === 0) {
+        return (
+            <p className='text-white pb-24'>
+                No related products found
+            </p>
+        )
     }
 
     return (
@@ -61,7 +72,7 @@ const RelatedProducts = ({
                 Related Products
             </h2>
 
-            <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-4'>
+            <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
                 {products.map(product => (
                     <ProductCard
                         key={product.id}

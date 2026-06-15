@@ -1,8 +1,14 @@
-const Breadcrumb = () => {
+import type { Product } from '../../../../../types/Product'
+
+type Props = {
+    product: Product
+}
+
+const Breadcrumb = ({ product }: Props) => {
     return (
         <div className='mb-8 text-sm text-[#A8A8A8]'>
-            Home / Products / Smart Lighting /
-            <span className='text-white'> Orvibo Smart Bulb B2</span>
+            Home / Products / {product.category_display} /
+            <span className='text-white'> {product.name}</span>
         </div>
     )
 }

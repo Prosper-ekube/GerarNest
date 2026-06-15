@@ -1,6 +1,6 @@
 from django.urls import include, path
 from rest_framework.routers import DefaultRouter
-from .views import ProductViewSet, create_order, initialize_payment, verify_payment
+from .views import ProductViewSet, create_order, initialize_payment, verify_payment, ReviewCreateView
 
 router = DefaultRouter()
 router.register('products', ProductViewSet)
@@ -9,5 +9,6 @@ urlpatterns = [
     path('', include(router.urls)),
     path('orders/', create_order),
     path('payments/init/', initialize_payment),
-    path('payments/verify/', verify_payment)
+    path('payments/verify/', verify_payment),
+    path('reviews/', ReviewCreateView.as_view())
 ]       

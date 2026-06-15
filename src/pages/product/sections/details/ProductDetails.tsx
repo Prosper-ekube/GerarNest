@@ -13,7 +13,6 @@ import ProductHero from './sections/ProductHero'
 import RelatedProducts from './sections/RelatedProducts'
 import Specifications from './sections/Specifications'
 import TrustSection from './sections/TrustSection'
-import ProductDescription from './sections/ProductDescription'
 import ReviewsSection from './sections/ReviewsSection'
 
 const ProductDetails = () => {
@@ -51,9 +50,9 @@ const ProductDetails = () => {
             <main className='bg-[#0a0a0a] min-h-screen pt-24 md:pt-36'>
                 <div className='max-w-7xl mx-auto px-6 md:px-8 lg:px-12'>
 
-                    <Breadcrumb />
+                    <Breadcrumb product={product}/>
 
-                    <ProductHero />
+                    <ProductHero product={product}/>
 
                     <FeatureHighlights />
 
@@ -61,11 +60,9 @@ const ProductDetails = () => {
 
                     <Specifications product={product} />
 
-                    <ProductDescription />
-
                     <Applications />
 
-                    <ReviewsSection />
+                    <ReviewsSection product={product} />
 
                     <TrustSection />
 
