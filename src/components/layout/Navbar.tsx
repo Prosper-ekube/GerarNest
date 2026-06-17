@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { HiMenu, HiX } from 'react-icons/hi'
 import { NavLink } from 'react-router-dom'
 
+import GH_Logo from '../../assets/images/GH_Logo.png'
+
 type NavItemProps = {
     children: string
     onClick?: () => void
@@ -36,9 +38,9 @@ const Navbar: React.FC = () => {
         <nav className='bg-[#0f0f1a] fixed left-0 px-6 lg:px-8 py-4 md:py-6 top-0 w-full z-50'>
             <div className='flex items-center justify-between mx-auto max-w-6xl'>
                 {/* Logo */}
-                <div className='flex flex-col gap-1 md:gap-2'>
-                    <h1 className='font-bold md:text-4xl text-xl text-white'>Gerar Smart Homes</h1>
-                    <p className='text-[#A8A8A8] text-sm'>Official Orvibo Partner</p>
+                <div className='flex flex-col items-center '>
+                    <img className='w-10' src={GH_Logo} />
+                    <h1 className='font-bold md:text-xl text-xs text-white'>Gerar Smart Homes</h1>
                 </div>
                 {/* Desktop Menu */}
                 <ul className='lg:flex hidden gap-8'>
