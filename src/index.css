@@ -7,6 +7,10 @@ html {
     scrollbar-color: #6F4CCF #0a0a0a;
 }
 
+body {
+    font-family: 'Inter', 'SF Pro Display', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
 }
