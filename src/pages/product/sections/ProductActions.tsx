@@ -88,9 +88,9 @@ const ProductActions = ({ product }: { product: Product }) => {
                 <button
                     key={button.label}
                     onClick={button.onClick}
-                    className={`active:scale-[0.98] cursor-pointer font-medium px-7 py-3.5 rounded-lg text-[14px] transition-all duration-200 ${button.variant === 'primary'
-                            ? 'bg-[#6f4ccf] hover:bg-[#5e3dbf] text-white'
-                            : 'bg-transparent border border-[#6f4ccf]/40 hover:border-[#6f4ccf] text-white'
+                    className={`${button.variant === 'primary'
+                        ? 'bg-[#6f4ccf] duration-1000 ease-in-out font-semibold hover:-translate-y-1 hover:bg-[#5a3ca8] px-8 py-4 rounded-full shadow-[#6f4ccf]/52 shadow-lg text-base text-white transition-all w-full md:w-72 lg:w-52 xl:w-60'
+                        : 'bg-transparent duration-1000 ease-in-out border-2 border-white font-semibold hover:-translate-y-1 hover:bg-white hover:text-[#0a0a0a] px-8 py-4 text-base rounded-full text-white transition-all w-full md:w-72 lg:w-52 xl:w-60'
                         }`}
                 >
                     {button.label}

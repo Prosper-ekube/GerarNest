@@ -40,16 +40,16 @@ const Features: React.FC = () => {
         }
     ]
 
-    const card = 'bg-[#1a1a2e] border border-[#6f4ccf]/10 duration-700 group hover:-translate-y-2 hover:border-[#6f4ccf]/30 hover:shadow-[#6f4ccf]/20 hover:shadow-xl p-8 rounded-2xl transition-all'
-    const iconWrapper = 'bg-gradient-to-br duration-700 flex from-[#6f4ccf] group-hover:rotate-3 group-hover:scale-110 h-20 items-center justify-center mb-6 rounded-2xl text-4xl text-white to-[#5a3ca8] transition-all w-20'
+    const card = 'bg-[#1a1a2e] border border-[#6f4ccf]/10 duration-1000 ease-in-out group hover:-translate-y-2 hover:border-[#6f4ccf]/30 hover:shadow-[#6f4ccf]/20 hover:shadow-xl p-8 rounded-2xl transition-all'
+    const iconWrapper = 'bg-gradient-to-br duration-1000 ease-in-out flex from-[#6f4ccf] group-hover:rotate-3 group-hover:scale-110 h-20 items-center justify-center mb-6 rounded-2xl text-4xl text-white to-[#5a3ca8] transition-all w-20'
 
     return (
         <section className='bg-[#0f0f1a] lg:px-8 pb-20 pt-10 px-6 lg:pt-20' id='features'>
             <div className='max-w-6xl mx-auto'>                
                 <div className='mb-16 text-center'>
-                    <span className='font-semibold text-[#6f4ccf] text-sm tracking-wider uppercase'>Why Choose Gerar Smart Homes</span>
-                    <h2 className='font-bold mt-4 mb-4 text-4xl lg:text-5xl text-white'>Smart Living Made <span className='text-[#6f4ccf]'>Simple</span></h2>
-                    <p className='max-w-2xl mx-auto text-[#a8a8a8] text-lg'>
+                    <span className='font-semibold text-[#6f4ccf] text-base tracking-wider uppercase'>Why Choose Gerar Smart Homes</span>
+                    <h2 className='font-bold mt-4 mb-4 text-4xl lg:text-4xl text-white'>Smart Living Made <span className='text-[#6f4ccf]'>Simple</span></h2>
+                    <p className='max-w-2xl mx-auto text-[#a8a8a8] text-base'>
                         Experience the perfect blend of innovation and simplicity with features designed for modern living
                     </p>
                 </div>
@@ -57,8 +57,8 @@ const Features: React.FC = () => {
                     {features.map(({ icon: Icon, id, title, description }) => (
                         <div className={card} key={id}>
                             <div className={iconWrapper}><Icon /></div>
-                            <h3 className='font-bold mb-3 text-white text-xl'>{title}</h3>
-                            <p className='leading-relaxed text-[#a8a8a8]'>{description}</p>
+                            <h3 className='font-bold mb-3 text-white text-base'>{title}</h3>
+                            <p className='leading-relaxed text-[#a8a8a8] text-sm'>{description}</p>
                         </div>
                     ))}
                 </div>

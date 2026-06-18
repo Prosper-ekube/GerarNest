@@ -12,10 +12,8 @@ class Product(models.Model):
     price = models.IntegerField()
     category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
     description = models.TextField()
-    image = models.URLField()
-    specs = models.JSONField(default=list)
-    rating = models.FloatField(default=0)
-    reviews = models.IntegerField(default=0)
+    image = models.URLField(blank=True, null=True)
+    specs = models.JSONField(default=list)    
     in_stock = models.BooleanField(default=True)
     featured = models.BooleanField(default=False)
 
@@ -30,7 +28,7 @@ class ProductImage(models.Model):
         related_name='images',
         on_delete=models.CASCADE
     )
-    image = models.URLField()
+    image = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return f'{self.product.name} Image'
@@ -63,3 +61,19 @@ class OrderItem(models.Model):
 
     def __str__(self):
         return f'{self.product.name} x {self.quantity}'
+
+class Review(models.Model):
+    product = models.ForeignKey(
+        Product,
+        related_name='reviews_list',
+        on_delete=models.CASCADE
+    )
+
+    name = models.CharField(max_length=100)
+    text = models.TextField()
+    rating = models.IntegerField()  # 1–5 stars
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.product.name} - {self.rating}'

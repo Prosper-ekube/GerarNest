@@ -26,7 +26,7 @@ const FormField: React.FC<FormFieldProps> = ({
 }) => {
     return (
         <div className='flex flex-col gap-2'>
-            <label className='text-[#888] text-sm tracking-[0.2px]'>
+            <label className='text-[#a8a8a8] text-sm tracking-[0.2px]'>
                 {label}
             </label>
             <input
@@ -87,7 +87,7 @@ const ContactForm = () => {
 
     return (
         <div className='flex flex-col w-full'>
-            <h1 className='font-medium leading-[1.15] mb-10 text-4xl text-white tracking-tight lg:text-5xl'>
+            <h1 className='font-bold leading-[1.15] mb-10 text-4xl text-white tracking-tight lg:text-5xl'>
                 Talk to a Gerar
                 <br />
                 Smart Homes specialist.
@@ -120,7 +120,7 @@ const ContactForm = () => {
                 />
 
                 <div className='flex flex-col gap-2'>
-                    <label className='text-[#888] text-sm tracking-[0.2px]'>
+                    <label className='text-[#a8a8a8] text-sm tracking-[0.2px]'>
                         Message
                     </label>
                     <textarea
@@ -133,7 +133,7 @@ const ContactForm = () => {
                 </div>
 
                 <button
-                    className='active:scale-[0.98] bg-white cursor-pointer font-medium hover:bg-[#e8e8e8] mt-2 px-7 py-3.5 rounded-lg self-start text-[#0d0d0d] text-[14px] transition-all duration-200 disabled:opacity-70'
+                    className='bg-[#6f4ccf] duration-1000 ease-in-out font-semibold hover:-translate-y-1 hover:bg-[#5a3ca8] self-start px-8 py-4 rounded-full shadow-[#6f4ccf]/40 shadow-lg text-base text-white transition-all'
                     disabled={isSubmitting}
                     type='submit'
                 >

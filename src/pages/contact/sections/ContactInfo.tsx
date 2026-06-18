@@ -8,7 +8,7 @@ const INFO_ITEMS: InfoItem[] = [
         label: 'Email',
         value: (
             <a
-                className='block hover:text-white text-[#ccc] transition-colors duration-200 w-24'
+                className='block break-all hover:text-white text-[#a8a8a8] transition-colors duration-200'
                 href='mailto:gerarsmarthomes@gmail.com'
             >
                 gerarsmarthomes@gmail.com
@@ -45,10 +45,10 @@ type InfoCellProps = {
 const InfoCell: React.FC<InfoCellProps> = ({ label, value }) => {
     return (
         <div>
-            <p className='leading-none mb-1.5 text-[#555] text-[11px] tracking-[0.8px] uppercase'>
+            <p className='leading-none mb-1.5 text-[#555] text-sm tracking-[0.8px] uppercase'>
                 {label}
             </p>
-            <div className='leading-relaxed text-[#ccc] text-[14px]'>
+            <div className='leading-relaxed text-[#a8a8a8] text-sm'>
                 {value}
             </div>
         </div>
@@ -57,7 +57,7 @@ const InfoCell: React.FC<InfoCellProps> = ({ label, value }) => {
 
 const ContactInfo = () => {
     return (
-        <div className='bg-[#111] border border-[#2a2a2a] gap-5 grid grid-cols-2 px-7 py-6 rounded-2xl'>
+        <div className='bg-[#111] border border-[#2a2a2a] gap-3 md:gap-3 grid grid-cols-2 p-4 md:p-6 rounded-2xl'>
             {INFO_ITEMS.map(item => (
                 <InfoCell key={item.label} label={item.label} value={item.value} />
             ))}
