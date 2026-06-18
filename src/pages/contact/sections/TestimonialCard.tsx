@@ -1,16 +1,5 @@
 import GH_Logo from '../../../assets/images/GH_Logo.png'
 
-const GridIcon = () => {
-    return (
-        <svg fill='none' height='16' viewBox='0 0 16 16' width='16'>
-            <rect fill='#0d0d0d' height='5' rx='1' width='5' x='2' y='2' />
-            <rect fill='#0d0d0d' height='5' rx='1' width='5' x='9' y='2' />
-            <rect fill='#0d0d0d' height='5' rx='1' width='5' x='2' y='9' />
-            <rect fill='#0d0d0d' height='5' rx='1' width='5' x='9' y='9' />
-        </svg>
-    )
-}
-
 const TestimonialCard = () => {
     return (
         <div className='bg-[#111] border border-[#2a2a2a] overflow-hidden p-4 md:p-6 relative rounded-2xl'>
