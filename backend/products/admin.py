@@ -7,13 +7,13 @@ class ProductImageInline(admin.TabularInline):
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('name', 'category', 'price', 'rating', 'reviews', 'in_stock', 'featured')
+    list_display = ('name', 'category', 'price', 'in_stock', 'featured')
     list_filter = ('category', 'in_stock', 'featured')
     search_fields = ('name', 'description')
 
     inlines = [ProductImageInline]
 
-    fields = ('name', 'price', 'category', 'description', 'image', 'specs', 'rating', 'reviews', 'in_stock', 'featured')
+    fields = ('name', 'price', 'category', 'description', 'image', 'specs', 'in_stock', 'featured')
 
 
 class OrderItemInline(admin.TabularInline):

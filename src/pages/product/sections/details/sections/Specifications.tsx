@@ -8,7 +8,7 @@ const Specifications = ({ product }: Props) => {
 
     return (
         <section className='mb-24'>
-            <h2 className='text-white text-3xl font-bold mb-8'>
+            <h2 className='text-white text-4xl font-bold mb-8'>
                 Specifications
             </h2>
 
@@ -21,9 +21,9 @@ const Specifications = ({ product }: Props) => {
                             className='bg-[#0E1013] rounded-2xl p-6'
                             key={index}
                         >
-                            <p className='text-[#A8A8A8] text-sm'>{title}</p>
+                            <p className='text-[#A8A8A8] text-xl'>{title}</p>
 
-                            <p className='text-white text-xl font-semibold mt-2'>
+                            <p className='text-white text-sm font-semibold mt-2'>
                                 {value}
                             </p>
                         </div>

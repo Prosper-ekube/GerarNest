@@ -2,8 +2,8 @@ import smart_living_room from '../../../assets/images/smart_living_room.jpg'
 import smart_living_room_desktop from '../../../assets/images/smart_living_room_desktop.jpg'
 
 const Hero: React.FC = () => {
-    const buttonPrimary = 'bg-[#6f4ccf] duration-1000 ease-in-out font-semibold hover:-translate-y-1 hover:bg-[#5a3ca8] px-8 py-4 rounded-full shadow-[#6f4ccf]/40 shadow-lg text-white transition-all'
-    const buttonSecondary = 'bg-transparent duration-1000 ease-in-out border-2 border-white font-semibold hover:-translate-y-1 hover:bg-white hover:text-[#0a0a0a] px-8 py-4 rounded-full text-white transition-all'
+    const buttonPrimary = 'bg-[#6f4ccf] duration-1000 ease-in-out font-semibold hover:-translate-y-1 hover:bg-[#5a3ca8] px-8 py-4 rounded-full shadow-[#6f4ccf]/40 shadow-lg text-base text-white transition-all'
+    const buttonSecondary = 'bg-transparent duration-1000 ease-in-out border-2 border-white font-semibold hover:-translate-y-1 hover:bg-white hover:text-[#0a0a0a] px-8 py-4 text-base rounded-full text-white transition-all'
 
     const statTitle = 'font-bold text-4xl text-[#6f4ccf]'
     const statText = 'text-[#a8a8a8] text-sm'

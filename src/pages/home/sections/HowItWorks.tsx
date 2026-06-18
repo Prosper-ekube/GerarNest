@@ -28,9 +28,9 @@ const HowItWorks: React.FC = () => {
         <section className='bg-[#1a1a2e] pb-20 pt-10 lg:pt-20 px-6 lg:px-8 text-white' id='how-it-works'>
             <div className='max-w-6xl mx-auto'>
                 <div className='mb-16 text-center'>
-                    <span className='font-semibold tracking-wider uppercase text-sm text-[#6f4ccf]'>Simple Process</span>
-                    <h2 className='mb-4 mt-4 font-bold text-4xl lg:text-5xl'>Get Started in <span className='text-[#6f4ccf]'>3 Easy Steps</span></h2>
-                    <p className='mx-auto max-w-2xl text-lg text-[#a8a8a8]'>Transform your home into a smart home in minutes with our simple setup process</p>
+                    <span className='font-semibold tracking-wider uppercase text-base text-[#6f4ccf]'>Simple Process</span>
+                    <h2 className='mb-4 mt-4 font-bold text-4xl lg:text-4xl'>Get Started in <span className='text-[#6f4ccf]'>3 Easy Steps</span></h2>
+                    <p className='mx-auto max-w-xl text-base text-[#a8a8a8]'>Transform your home into a smart home in minutes with our simple setup process</p>
                 </div>
                 <div className='gap-12 grid md:grid-cols-3'>
                     {steps.map(({ description, id, number, title }, index) => (
@@ -39,8 +39,8 @@ const HowItWorks: React.FC = () => {
                                 <FaChevronRight className='absolute hidden md:block -right-8 text-4xl text-[#6f4ccf] top-12' />
                             )}
                             <div className={numberCircle}>{number}</div>
-                            <h3 className='font-bold mb-4 text-2xl'>{title}</h3>
-                            <p className='leading-relaxed text-[#a8a8a8]'>{description}</p>
+                            <h3 className='font-bold mb-4 text-xl'>{title}</h3>
+                            <p className='leading-relaxed  text-sm text-[#a8a8a8]'>{description}</p>
                         </div>
                     ))}
                 </div>

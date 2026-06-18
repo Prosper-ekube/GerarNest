@@ -2,6 +2,8 @@
 import React from 'react';
 import { MdEmail, MdPhone } from 'react-icons/md';
 
+import GH_Logo from '../../assets/images/GH_Logo.png'
+
 // Types
 interface FooterLink {
     label: string;
@@ -15,16 +17,14 @@ interface FooterSection {
 
 const Footer: React.FC = () => {
     const solutions: FooterLink[] = [
+        { label: 'Smart Central Control Panels', href: '#' },
         { label: 'Smart Lighting', href: '#' },
-        { label: 'Security & Surveillance', href: '#' },
-        { label: 'Climate Control', href: '#' },
-        { label: 'Smart Curtains & Blinds', href: '#' },
-        { label: 'Voice-Controlled Systems', href: '#' },
+        { label: 'Smart Switches', href: '#' },
+        { label: 'Home & Security Sensors', href: '#' }
     ];
 
     const company: FooterLink[] = [
         { label: 'About Us', href: '#' },
-        { label: 'Projects', href: '#' },
         { label: 'Partnership', href: '#' },
         { label: 'Contact', href: '#' },
     ];
@@ -46,40 +46,43 @@ const Footer: React.FC = () => {
 
                     {/* Column 1: Brand Identity */}
                     <div className="lg:col-span-1">
-                        <h2 className="text-xl font-bold text-white mb-3">
-                            Gerar Smart Homes
-                        </h2>
-                        <p className="text-gray-400 text-sm leading-relaxed mb-3">
+                        <div className='flex'>
+                            <div className='flex flex-col items-center '>
+                                <img className='w-10' src={GH_Logo} />
+                                <h1 className='font-bold md:text-sm text-xs text-white'>Gerar Smart Homes</h1>
+                            </div>
+                        </div>                    
+                        <p className="text-[#a8a8a8] text-sm leading-relaxed mt-8 mb-3">
                             Premium smart home design, installation and support for high-end
                             residences and developments across Nigeria.
                         </p>
-                        <p className="text-gray-500 text-xs tracking-wide">
+                        <p className="text-[#a8a8a8] text-xs tracking-wide">
                             Official Orvibo Partner &amp; Distributor
                         </p>
                     </div>
 
                     {/* Column 2: Contact */}
                     <div>
-                        <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                        <h3 className="text-sm font-semibold text-[#a8a8a8] uppercase tracking-wider mb-4">
                             Contact
                         </h3>
                         <ul className="space-y-3">
                             <li>
                                 <a
                                     href="mailto:info@gerarsmarthomes.ng"
-                                    className="text-gray-300 text-sm hover:text-white transition-colors duration-200 flex items-center gap-2 group"
+                                    className="text-white text-sm hover:text-white hover:-translate-y-1 duration-1000 ease-in-out flex items-center gap-2 group"
                                 >
-                                    <MdEmail className="w-4 h-4 flex-shrink-0 text-gray-400 group-hover:text-white transition-colors duration-200" />
-                                    info@gerarsmarthomes.ng
+                                    <MdEmail className="w-4 h-4 flex-shrink-0 text-[#a8a8a8] group-hover:text-white transition-colors duration-200" />
+                                    gerarsmarthomes@gmail.com
                                 </a>
                             </li>
                             <li>
                                 <a
                                     href="tel:+2348000000000"
-                                    className="text-gray-300 text-sm hover:text-white transition-colors duration-200 flex items-center gap-2 group"
+                                    className="text-white text-sm hover:text-white hover:-translate-y-1 duration-1000 ease-in-out flex items-center gap-2 group"
                                 >
-                                    <MdPhone className="w-4 h-4 flex-shrink-0 text-gray-400 group-hover:text-white transition-colors duration-200" />
-                                    +234 (0) 800 000 0000
+                                    <MdPhone className="w-4 h-4 flex-shrink-0 text-[#a8a8a8] group-hover:text-white hover:-translate-y-1 duration-1000 ease-in-out" />
+                                    +234 70 5523 9376
                                 </a>
                             </li>
                         </ul>
@@ -94,22 +97,22 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Copyright & Legal */}
-                <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <p className="text-gray-500 text-xs">
+                <div className="border-t border-[#2a2a2a] mt-10 pt-6 flex flex-col lg:flex-row justify-between items-center gap-4">
+                    <p className="text-white text-sm">
                         &copy; {currentYear} Gerar Smart Homes. All rights reserved.
                     </p>
 
-                    <div className="flex items-center gap-4 text-xs">
+                    <div className="flex items-center gap-4 text-sm">
                         {legal.map((link, index) => (
                             <React.Fragment key={link.label}>
                                 <a
                                     href={link.href}
-                                    className="text-gray-500 hover:text-gray-300 transition-colors duration-200"
+                                    className="text-white hover:text-white hover:-translate-y-1 duration-1000 ease-in-out"
                                 >
                                     {link.label}
                                 </a>
                                 {index < legal.length - 1 && (
-                                    <span className="text-gray-700">|</span>
+                                    <span className="text-[#2a2a2a]">|</span>
                                 )}
                             </React.Fragment>
                         ))}
@@ -128,7 +131,7 @@ const FooterSection: React.FC<{ title: string; links: FooterLink[] }> = ({
 }) => {
     return (
         <div>
-            <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
+            <h3 className="text-sm font-semibold text-[#a8a8a8] uppercase tracking-wider mb-4">
                 {title}
             </h3>
             <ul className="space-y-2">
@@ -136,7 +139,7 @@ const FooterSection: React.FC<{ title: string; links: FooterLink[] }> = ({
                     <li key={link.label}>
                         <a
                             href={link.href}
-                            className="text-gray-300 text-sm hover:text-white transition-colors duration-200"
+                            className="inline-block text-white text-sm transform transition-transform duration-1000 ease-in-out hover:-translate-y-1"
                         >
                             {link.label}
                         </a>

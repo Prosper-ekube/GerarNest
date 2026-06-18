@@ -11,7 +11,7 @@ type NavItemProps = {
 }
 
 const NavItem = ({ children, onClick, to }: NavItemProps) => {
-    const baseClasses = 'duration-1000 text-4xl md:text-base transition-colors'
+    const baseClasses = 'duration-1000 text-4xl md:text-sm transition-all hover:-translate-y-1 duration-1000 ease-in-out'
     const activeClasses = 'text-white'
     const inactiveClasses = 'hover:text-gray-300 text-[#A8A8A8]'
 
@@ -36,11 +36,11 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className='bg-[#0f0f1a] fixed left-0 px-6 lg:px-8 py-4 md:py-6 top-0 w-full z-50'>
-            <div className='flex items-center justify-between mx-auto max-w-6xl'>
+            <div className='flex items-center justify-between mx-auto max-w-7xl'>
                 {/* Logo */}
                 <div className='flex flex-col items-center '>
                     <img className='w-10' src={GH_Logo} />
-                    <h1 className='font-bold md:text-xl text-xs text-white'>Gerar Smart Homes</h1>
+                    <h1 className='font-bold md:text-sm text-xs text-white'>Gerar Smart Homes</h1>
                 </div>
                 {/* Desktop Menu */}
                 <ul className='lg:flex hidden gap-8'>

@@ -10,12 +10,12 @@ const ReviewsSection = ({ product }: Props) => {
 
     return (
         <section className='mb-24'>
-            <h2 className='text-white text-3xl font-bold mb-8'>
+            <h2 className='text-white text-4xl font-bold mb-8'>
                 Customer Reviews
             </h2>
 
             {/* SUMMARY */}
-            <div className='mb-8 text-[#A8A8A8]'>
+            <div className='mb-8 text-[#A8A8A8] text-sm'>
                 <p>
                     {product.rating?.toFixed(1)} average rating • {reviews.length} reviews
                 </p>
@@ -23,7 +23,7 @@ const ReviewsSection = ({ product }: Props) => {
 
             {/* EMPTY STATE */}
             {reviews.length === 0 ? (
-                <p className='text-[#A8A8A8]'>
+                <p className='text-[#A8A8A8] text-sm'>
                     No reviews yet for this product.
                 </p>
             ) : (
@@ -31,7 +31,7 @@ const ReviewsSection = ({ product }: Props) => {
                     {reviews.map((review, index) => (
                         <div
                             key={index}
-                            className='bg-[#0E1013] rounded-2xl p-6'
+                            className='bg-[#0E1013] rounded-2xl p-6 text-sm'
                         >
                             <div className='flex items-center justify-between mb-3'>
                                 <p className='text-white font-semibold'>
@@ -45,7 +45,7 @@ const ReviewsSection = ({ product }: Props) => {
                                 </div>
                             </div>
 
-                            <p className='text-[#A8A8A8] text-sm leading-relaxed'>
+                            <p className='text-[#A8A8A8] text-sm leading-relaxed text-sm'>
                                 {review.text}
                             </p>
                         </div>

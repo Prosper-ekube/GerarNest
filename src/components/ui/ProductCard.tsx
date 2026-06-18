@@ -11,7 +11,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     const navigate = useNavigate()
 
     return (
-        <div className='group flex flex-col overflow-hidden rounded-2xl border border-[#6f4ccf]/10 bg-[#1a1a2e] transition-all hover:-translate-y-1 hover:border-[#6f4ccf]/30 hover:shadow-lg hover:shadow-[#6f4ccf]/20'>
+        <div className='group flex flex-col overflow-hidden rounded-2xl border border-[#6f4ccf]/10 bg-[#1a1a2e] transition-all duration-1000 ease-in-out hover:-translate-y-1 hover:border-[#6f4ccf]/30 hover:shadow-lg hover:shadow-[#6f4ccf]/20'>
 
             {/* CLICKABLE AREA */}
             <Link to={`/products/${product.id}`} className='flex flex-col'>
@@ -62,7 +62,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                         e.stopPropagation()
                         console.log('Add to cart')
                     }}
-                    className='rounded-full border-2 border-[#6f4ccf] px-4 py-2.5 text-sm font-semibold text-[#6f4ccf] transition-colors hover:bg-[#6f4ccf]/10'
+                    className='rounded-full border-2 border-[#6f4ccf] px-4 py-2.5 text-sm font-semibold text-[#6f4ccf] transition-all hover:bg-[#6f4ccf]/10 hover:-translate-y-1 duration-1000 ease-in-out'
                 >
                     Add to Cart
                 </button>
@@ -72,7 +72,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                         e.stopPropagation()
                         navigate(`/products/${product.id}`)
                     }}
-                    className='rounded-full bg-[#6f4ccf] px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#5a3ca8]'
+                    className='rounded-full bg-[#6f4ccf] px-4 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[#5a3ca8] hover:-translate-y-1 duration-1000 ease-in-out'
                 >
                     View More
                 </button>

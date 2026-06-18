@@ -25,7 +25,7 @@ const Testimonials: React.FC = () => {
         }
     ]
 
-    const card = 'bg-[#1a1a2e] border border-[#6f4ccf]/10 hover:-translate-y-2 hover:border-[#6f4ccf]/30 hover:shadow-[#6f4ccf]/15 duration-700 p-8 rounded-2xl shadow-xl transition-all'
+    const card = 'bg-[#1a1a2e] border border-[#6f4ccf]/10 hover:-translate-y-2 hover:border-[#6f4ccf]/30 hover:shadow-[#6f4ccf]/15 duration-1000 ease-in-out p-8 rounded-2xl shadow-xl transition-all'
     const initialsCircle = 'bg-gradient-to-br flex font-bold from-[#6f4ccf] h-12 items-center justify-center rounded-full text-white to-[#5a3ca8] w-12'
     const starsWrapper = 'flex mb-6 text-[#6f4ccf] text-xl'
 
@@ -33,11 +33,11 @@ const Testimonials: React.FC = () => {
         <section className='bg-[#0f0f1a] pb-20 pt-10 lg:pt-20 px-6 lg:px-8' id='testimonials'>
             <div className='max-w-6xl mx-auto'>
                 <div className='mb-16 text-center'>
-                    <span className='font-semibold text-sm tracking-wider uppercase text-[#6f4ccf]'>Customer Reviews</span>
-                    <h2 className='mt-4 mb-4 font-bold text-4xl lg:text-5xl text-white'>What Our <span className='text-[#6f4ccf]'>Customers Say</span></h2>
-                    <p className='max-w-2xl mx-auto text-lg text-[#a8a8a8]'>Join thousands of happy customers who have transformed their homes with SmartNest</p>
+                    <span className='font-semibold text-sm tracking-wider uppercase text-base text-[#6f4ccf]'>Customer Reviews</span>
+                    <h2 className='mt-4 mb-4 font-bold text-4xl lg:text-4xl text-white'>What Our <span className='text-[#6f4ccf]'>Customers Say</span></h2>
+                    <p className='max-w-xl mx-auto text-base text-[#a8a8a8]'>Join thousands of happy customers who have transformed their homes with Gerar Smart Homes</p>
                 </div>
-                <div className='gap-8 grid md:grid-cols-3'>
+                <div className='gap-8 grid md:grid-cols-2 lg:grid-cols-3'>
                     {testimonials.map(({ initials, name, rating, role, text }) => (
                         <div className={card} key={initials}>
                             <div className={starsWrapper}>
@@ -45,11 +45,11 @@ const Testimonials: React.FC = () => {
                                     <FaStar key={i} />
                                 ))}
                             </div>
-                            <p className='mb-6 leading-relaxed text-[#a8a8a8]'>{text}</p>
+                            <p className='mb-6 leading-relaxed text-sm text-[#a8a8a8]'>{text}</p>
                             <div className='flex gap-4 items-center'>
                                 <div className={initialsCircle}>{initials}</div>
                                 <div>
-                                    <h4 className='font-semibold text-white'>{name}</h4>
+                                    <h4 className='font-semibold text-sm text-white'>{name}</h4>
                                     <p className='text-sm text-[#a8a8a8]'>{role}</p>
                                 </div>
                             </div>

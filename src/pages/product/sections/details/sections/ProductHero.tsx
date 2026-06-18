@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ProductActions from '../../ProductActions'
 import type { Product } from '../../../../../types/Product'
 
 type Props = {
@@ -15,10 +16,10 @@ const ProductHero = ({ product }: Props) => {
 
             {/* Gallery */}
             <div>
-                <div className='bg-[#0E1013] lg:p-4'>
+                <div className='bg-[#0E1013] lg:p-4 rounded-md'>
                     <img
                         alt={product.name}
-                        className='lg:h-[350px] mx-auto rounded-xl object-contain'
+                        className='lg:h-[350px] mx-auto object-contain'
                         src={selectedImage}
                     />
                 </div>
@@ -29,14 +30,14 @@ const ProductHero = ({ product }: Props) => {
                             <button
                                 key={img.id}
                                 onClick={() => setSelectedImage(img.image)}
-                                className={`bg-[#0E1013] p-2 rounded-xl border ${selectedImage === img.image
+                                className={`bg-[#0E1013] rounded border ${selectedImage === img.image
                                         ? 'border-[#6F4CCF]'
                                         : 'border-transparent'
                                     }`}
                             >
                                 <img
                                     alt='thumb'
-                                    className='h-16 w-full object-contain'
+                                    className='object-contain'
                                     src={img.image}
                                 />
                             </button>
@@ -51,11 +52,11 @@ const ProductHero = ({ product }: Props) => {
                     {product.category_display}
                 </span>
 
-                <h1 className='text-white text-3xl font-bold mt-4'>
+                <h1 className='text-white text-4xl font-bold mt-4'>
                     {product.name}
                 </h1>
 
-                <p className='text-[#A8A8A8] mt-4 max-w-[500px] md:max-w-[704px]'>
+                <p className='text-[#A8A8A8] text-sm mt-4 max-w-[500px] md:max-w-[704px]'>
                     {product.description}
                 </p>
 
@@ -63,11 +64,12 @@ const ProductHero = ({ product }: Props) => {
                     ₦{Number(product.price).toLocaleString()}
                 </p>
 
-                <ul className='space-y-3 mt-8 text-white'>
+                <ul className='space-y-3 mt-8 mb-10 text-white text-sm'>
                     {product.specs?.slice(0, 4).map((spec, index) => (
                         <li key={index}>✓ {spec}</li>
                     ))}
                 </ul>
+                <ProductActions product={product} />
             </div>
 
         </section>

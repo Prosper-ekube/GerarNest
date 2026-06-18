@@ -27,11 +27,11 @@ const features = [
 const FeatureHighlights = () => {
     return (
         <section className='mb-24'>
-            <h2 className='text-white text-3xl font-bold mb-8'>
+            <h2 className='text-white text-4xl font-bold mb-8'>
                 Why You'll Love It
             </h2>
 
-            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-sm'>
                 {features.map(feature => (
                     <div
                         className='bg-[#0E1013] border border-[#6F4CCF]/10 rounded-2xl p-6'

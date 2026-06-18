@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({ onSearch }) => {
             <div className='absolute inset-0 bg-[#0a0a0a]/90' />
 
             <div className='relative z-10 max-w-6xl mx-auto text-center'>
-                <h1 className='text-6xl lg:text-8xl font-bold text-white mb-4'>
+                <h1 className='text-6xl lg:text-6xl font-bold text-white mb-4'>
                     Gerar Smart Homes
                 </h1>
 

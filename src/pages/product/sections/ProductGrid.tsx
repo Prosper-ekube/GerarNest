@@ -59,7 +59,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ searchQuery }) => {
                     <aside className='w-full space-y-6'>
                         <div className='border border-[#6f4ccf]/20 rounded-2xl overflow-hidden bg-[#1a1a2e]'>
                             <div className='p-4'>
-                                <h3 className='font-bold text-white'>Category</h3>
+                                <h3 className='font-bold text-base text-white'>Category</h3>
                             </div>
 
                             <ul className='p-4 pt-0 space-y-3'>
