@@ -12,7 +12,7 @@ type ActionButton = {
 const ProductActions = ({ product }: { product: Product }) => {
     const cart = useCart();
     const [showCheckout, setShowCheckout] = useState(false);
-    const [isBuyNow, setIsBuyNow] = useState(false);
+    const [,setIsBuyNow] = useState(false);
 
     const handleAddToCart = () => {
         cart.addToCart(product);
