@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
+import { useCart } from '../context/CartContext'
 import { FaCheck } from 'react-icons/fa'
 import Navbar from '../components/layout/Navbar'
 import Footer from '../components/layout/Footer'
@@ -13,6 +14,7 @@ type Order = {
 
 const PaymentSuccess: React.FC = () => {
     const navigate = useNavigate()
+    const { clearCart } = useCart()
     const [searchParams] = useSearchParams()
     const reference = searchParams.get('reference')
 
@@ -37,8 +39,14 @@ const PaymentSuccess: React.FC = () => {
                 const data = await res.json()
                 console.log('VERIFY SUCCESS:', data)
 
-                if (data.status !== 'failed') {
+                if (data.status === 'paid') {
                     setOrder(data)
+
+                    if (localStorage.getItem('cart')) {
+                        clearCart()
+                    }
+                } else {
+                    navigate('/payment-failed')
                 }
 
             } catch (err) {
@@ -104,7 +112,7 @@ const PaymentSuccess: React.FC = () => {
                                 <div className='flex justify-between'>
                                     <span className='text-[#a8a8a8]'>Amount</span>
                                     <span className='text-white font-semibold'>
-                                        ₦{order?.amount}
+                                            ₦{order?.amount?.toLocaleString()}
                                     </span>
                                 </div>
                             </>

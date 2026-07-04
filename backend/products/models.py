@@ -43,15 +43,23 @@ class Order(models.Model):
 
     full_name = models.CharField(max_length=255)
     email = models.EmailField()
+    phone = models.CharField(max_length=20, blank=True)
     amount = models.IntegerField(default=0)
-    status = models.CharField(max_length=20, default='pending')
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
 
     paystack_ref = models.CharField(max_length=100, blank=True, null=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'Order {self.id} - {self.status}'
+        return f'#{self.id} - {self.full_name} ({self.status})'
+
+    @property
+    def total_items(self):
+        return sum(
+            item.quantity
+            for item in self.items.all()
+        )
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, related_name='items', on_delete=models.CASCADE)

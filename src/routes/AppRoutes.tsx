@@ -6,20 +6,25 @@ import PaymentSuccess from '../pages/PaymentSuccess'
 import Contact from "../pages/contact/Contact"
 import AdminProducts from '../pages/admin/AdminProducts'
 import PaymentFailed from '../pages/PaymentFailed'
+import { CartProvider } from '../context/CartContext'
+// import Cart from '../pages/cart/Cart'
 
 const AppRoutes = () => {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/product' element={<Product />} />
-                <Route path='/products/:id' element={<ProductDetails />} />
-                <Route path='/contact' element={<Contact />} />
-                <Route path='/admin/products' element={<AdminProducts />} />
-                <Route path='/payment-success' element={<PaymentSuccess />} />
-                <Route path='/payment-failed' element={<PaymentFailed />} />
-            </Routes>
-        </BrowserRouter>
+        <CartProvider>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/product' element={<Product />} />
+                    <Route path='/products/:id' element={<ProductDetails />} />
+                    {/* <Route path='/cart' element={<Cart />}/> */}
+                    <Route path='/contact' element={<Contact />} />
+                    <Route path='/admin/products' element={<AdminProducts />} />
+                    <Route path='/payment-success' element={<PaymentSuccess />} />
+                    <Route path='/payment-failed' element={<PaymentFailed />} />
+                </Routes>
+            </BrowserRouter>
+        </CartProvider>
     )
 }
 

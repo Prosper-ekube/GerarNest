@@ -37,7 +37,7 @@ const FormField: React.FC<FormFieldProps> = ({
                 {label}
             </label>
             <input
-                className='bg-[#1a1a1a] border border-[#2e2e2e] focus:border-[#555] focus:outline-none font-[inherit] px-3.5 py-3 rounded-lg text-sm text-white transition-colors duration-200 placeholder:text-[#444]'
+                className='bg-[#1a1a1a] border border-[#2e2e2e] focus:border-[#555] focus:outline-none font-[inherit] px-3.5 py-3 rounded-lg text-sm text-white transition-all duration-200 placeholder:text-[#444]'
                 name={name}
                 onChange={onChange}
                 placeholder={placeholder}
@@ -202,8 +202,7 @@ const ContactForm = () => {
                 )}
 
                 <button
-                    className={`bg-[#6f4ccf] duration-300 ease-in-out font-semibold hover:-translate-y-1 hover:bg-[#5a3ca8] self-start px-8 py-4 rounded-full shadow-[#6f4ccf]/40 shadow-lg text-base text-white transition-all ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
-                        }`}
+                    className={`bg-[#6f4ccf] duration-1000 ease-in-out font-semibold hover:-translate-y-1 hover:bg-[#5a3ca8] self-start px-8 py-4 rounded-full shadow-[#6f4ccf]/40 shadow-lg text-base text-white transition-all ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                     disabled={isSubmitting}
                     type='submit'
                 >

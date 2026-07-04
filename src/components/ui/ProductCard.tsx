@@ -2,12 +2,14 @@ import React from 'react'
 import { FaStar } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
 import type { Product } from '../../types/Product'
+import { useCart } from '../../context/CartContext'
 
 type ProductCardProps = {
     product: Product
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+    const { addToCart } = useCart()
     const navigate = useNavigate()
 
     return (
@@ -59,8 +61,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 <button
                     disabled={!product.in_stock}
                     onClick={(e) => {
+                        e.preventDefault()
                         e.stopPropagation()
-                        console.log('Add to cart')
+                        addToCart(product)
                     }}
                     className='rounded-full border-2 border-[#6f4ccf] px-4 py-2.5 text-sm font-semibold text-[#6f4ccf] transition-all hover:bg-[#6f4ccf]/10 hover:-translate-y-1 duration-1000 ease-in-out'
                 >
