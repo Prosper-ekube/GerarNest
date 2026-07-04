@@ -7,24 +7,24 @@ import Contact from "../pages/contact/Contact"
 import AdminProducts from '../pages/admin/AdminProducts'
 import PaymentFailed from '../pages/PaymentFailed'
 import { CartProvider } from '../context/CartContext'
-// import Cart from '../pages/cart/Cart'
+import ScrollToTop from '../components/ui/ScrollToTop'
 
 const AppRoutes = () => {
     return (
         <CartProvider>
             <BrowserRouter>
+                <ScrollToTop />
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/product' element={<Product />} />
                     <Route path='/products/:id' element={<ProductDetails />} />
-                    {/* <Route path='/cart' element={<Cart />}/> */}
                     <Route path='/contact' element={<Contact />} />
                     <Route path='/admin/products' element={<AdminProducts />} />
                     <Route path='/payment-success' element={<PaymentSuccess />} />
                     <Route path='/payment-failed' element={<PaymentFailed />} />
                 </Routes>
             </BrowserRouter>
-        </CartProvider>
+        </CartProvider >
     )
 }
 

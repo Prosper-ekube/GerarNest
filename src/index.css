@@ -5,6 +5,7 @@
 html {
     scrollbar-width: thin;
     scrollbar-color: #6F4CCF #0a0a0a;
+    scroll-behavior: smooth;
 }
 
 body {
