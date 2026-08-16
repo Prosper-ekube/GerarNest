@@ -16,10 +16,10 @@ const ProductHero = ({ product }: Props) => {
 
             {/* Gallery */}
             <div>
-                <div className='bg-[#0E1013] lg:p-4 rounded-md'>
+                <div className='bg-[#0E1013] p-2 lg:p-4 rounded-md h-[300px] lg:h-[382px] flex items-center justify-center'>
                     <img
                         alt={product.name}
-                        className='lg:h-[350px] mx-auto object-contain'
+                        className='w-full h-full object-contain'
                         src={selectedImage}
                     />
                 </div>
@@ -30,14 +30,14 @@ const ProductHero = ({ product }: Props) => {
                             <button
                                 key={img.id}
                                 onClick={() => setSelectedImage(img.image)}
-                                className={`bg-[#0E1013] rounded border ${selectedImage === img.image
+                                className={`bg-[#0E1013] rounded border h-20 flex items-center justify-center ${selectedImage === img.image
                                         ? 'border-[#6F4CCF]'
                                         : 'border-transparent'
                                     }`}
                             >
                                 <img
                                     alt='thumb'
-                                    className='object-contain'
+                                    className='w-full h-full object-contain p-2'
                                     src={img.image}
                                 />
                             </button>
