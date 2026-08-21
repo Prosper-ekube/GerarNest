@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
+
 import type { Product } from '../../../../types/Product'
 
 import Footer from '../../../../components/layout/Footer'
@@ -44,7 +46,88 @@ const ProductDetails = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{`${product.name} | GerarNest`}</title>
 
+                <meta
+                    name='description'
+                    content={product.description}
+                />
+
+                <meta
+                    property='og:title'
+                    content={`${product.name} | GerarNest`}
+                />
+
+                <meta
+                    property='og:description'
+                    content={product.description}
+                />
+
+                <meta
+                    property='og:type'
+                    content='product'
+                />
+
+                <meta
+                    property='og:site_name'
+                    content='GerarNest'
+                />
+
+                <meta
+                    property='og:image'
+                    content={product.image}
+                />
+
+                <meta
+                    name='twitter:card'
+                    content='summary_large_image'
+                />
+
+                <meta
+                    name='twitter:title'
+                    content={`${product.name} | GerarNest`}
+                />
+
+                <meta
+                    name='twitter:description'
+                    content={product.description}
+                />
+
+                <meta
+                    name='twitter:image'
+                    content={product.image}
+                />
+                <script type='application/ld+json'>
+                    {JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'Product',
+                        name: product.name,
+                        description: product.description,
+                        image: [product.image],
+                        brand: {
+                            '@type': 'Brand',
+                            name: 'Orvibo'
+                        },
+                        offers: {
+                            '@type': 'Offer',
+                            priceCurrency: 'NGN',
+                            price: product.price,
+                            availability: product.in_stock
+                                ? 'https://schema.org/InStock'
+                                : 'https://schema.org/OutOfStock',
+                            url: window.location.href
+                        },
+                        ...(product.review_count > 0 && {
+                            aggregateRating: {
+                                '@type': 'AggregateRating',
+                                ratingValue: product.rating,
+                                reviewCount: product.review_count
+                            }
+                        })
+                    })}
+                </script>
+            </Helmet>
             <Navbar />
 
             <main className='bg-[#0a0a0a] min-h-screen pt-24 md:pt-36'>
