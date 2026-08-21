@@ -7,11 +7,11 @@ import TestimonialCard from './sections/TestimonialCard'
 
 const Contact = () => {
     return (
-        <div className ='bg-[#0a0a0a]'>
+        <div className='bg-[#0a0a0a] min-h-screen flex flex-col'>
             <Navbar />
             <PageTransition>
-                <main>
-                    <div className='bg-[#0a0a0a] min-h-screen pt-24 md:pt-36 px-4 md:px-12 pb-12'>
+                <main className='flex-1'>
+                    <div className='bg-[#0a0a0a] xl:min-h-screen pt-24 md:pt-36 px-4 md:px-12 pb-12'>
                         <div className='flex flex-col md:flex-row gap-14 lg:gap-12 lg:justify-between max-w-6xl mx-auto'>
                             <div className='flex flex-col md:w-1/2'>
                                 <ContactForm />
