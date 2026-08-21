@@ -1,0 +1,1636 @@
+[
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "name": "MixPad S",
+    "price": 1100000,
+    "category": "smart_panels",
+    "description": "An all-in-one smart home control panel that combines a Zigbee gateway, smart switch, touchscreen interface, voice control, and multi-device automation in a single wall-mounted unit. It supports control of lighting, smart appliances, and scenes through touch, physical buttons, voice, and the ORVIBO Home app. The MixPad S also includes built-in temperature, humidity, light, and proximity sensing.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895388/MixPad_S_ofrzvf.webp",
+    "specs": [
+      "Connectivity: Wi-Fi, Bluetooth, Zigbee 3.0",
+      "Display: 4-inch 480 × 480 Touchscreen",
+      "Power: AC 220V",
+      "Lighting Control: 2-Gang, 200W per Gang",
+      "Voice Control: Dual-Microphone Array, 7m Far-Field Recognition",
+      "Sensors: Temperature, Humidity, Ambient Light, Proximity",
+      "Gateway: Built-in Zigbee Gateway",
+      "Installation: Standard 86-Type Wall Box"
+    ],
+    "in_stock": true,
+    "featured": true,
+    "created_at": "2026-04-12T07:46:21.377Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 12,
+  "fields": {
+    "name": "MixPad M5",
+    "price": 680000,
+    "category": "smart_panels",
+    "description": "A smart voice control panel that combines touch-based lighting control, voice assistance, and multi-protocol smart-home connectivity in a single wall-mounted interface. The MixPad M5 supports 4-gang lighting control, dimming and color adjustment, automation scenes, remote app control, and control of compatible curtains, air conditioners, and other smart devices.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895388/MixPad_M5_puxeab.webp",
+    "specs": [
+      "Connectivity: Wi-Fi 2.4GHz/5GHz, Bluetooth, Zigbee",
+      "Power: 220–240V AC, 50/60Hz",
+      "Lighting Control: 4-Gang",
+      "Load Capacity: Max 400W L1/L2, 200W L3/L4",
+      "Voice Control: Built-in Alexa",
+      "Installation: Surface Mount",
+      "Material: Plastic"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-04-13T17:03:10.605Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 14,
+  "fields": {
+    "name": "MixPad Genie",
+    "price": 550000,
+    "category": "smart_panels",
+    "description": "A compact smart control panel designed to bring lighting, appliance control, and everyday smart-home functions into one interface. It combines a 3.27-inch HD touchscreen with physical buttons, voice/app control, and multiple wireless protocols, while also supporting Type-C phone charging. ORVIBO lists it as a smart panel for controlling lights and home appliances, with temperature, date, and time display.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895383/MixPad_Genie_ruoxer.webp",
+    "specs": [
+      "Connectivity: Bluetooth Mesh, Wi-Fi, Infrared",
+      "Display: 3.27-inch HD Color Touchscreen",
+      "Light Control: 3-Gang",
+      "Interaction: Voice, Touchscreen, Buttons, App",
+      "Charging: Type-C Mobile Phone Charging",
+      "Power: Zero Live Wire, Two-Terminal Socket, or Data Line"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-04-17T06:47:30.426Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 16,
+  "fields": {
+    "name": "Smoke Sensor SF30",
+    "price": 46000,
+    "category": "home_security",
+    "description": "A Zigbee smart smoke sensor designed to continuously monitor for smoke and provide an immediate audible and visual warning when smoke is detected. It can also send alerts through the ORVIBO smart-home app, supports remote mute, and provides low-battery warnings for continuous fire-safety monitoring.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202372/Smoke_Sensor_SF30_mcdr21.webp",
+    "specs": [
+      "Connectivity: Zigbee",
+      "Power: 3V CR123A Battery",
+      "Detection Type: Photoelectric Smoke Detection",
+      "Alarm: 80dB at 3m Built-in Siren",
+      "Wireless Range: Up to 80m",
+      "Low Battery Warning: 2.6V ± 0.2V",
+      "Operating Temperature: -10°C to 55°C",
+      "Installation: Ceiling Mount",
+      "Dimensions: Ø90 × 37mm"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-06-18T12:59:11.747Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 17,
+  "fields": {
+    "name": "Water Leakage Sensor SW30",
+    "price": 45000,
+    "category": "home_security",
+    "description": "A compact Zigbee smart water leakage sensor designed to detect water leaks, overflow, and changes in water levels before they cause significant damage. It provides a local light alarm and remote notifications through the ORVIBO smart-home ecosystem, making it suitable for bathrooms, kitchens, utility areas, and other locations where water leakage needs to be monitored. It uses low-power operation and tool-free placement for easy installation.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202366/Water_Leakage_Sensor_SW30_iipbtu.png",
+    "specs": [
+      "Connectivity: Zigbee",
+      "Power: 3V CR2032 Battery",
+      "Detection Type: Water Sensor",
+      "Alarm: Local Light Alarm & Remote Push Notification",
+      "Wireless Range: Up to 80m (Open Environment)",
+      "Standby Current: <10µA",
+      "Operating Temperature: -10°C to +55°C",
+      "Installation: Direct Placement in Detection Area",
+      "Dimensions: Ø50 × 18mm"
+    ],
+    "in_stock": true,
+    "featured": true,
+    "created_at": "2026-06-18T13:01:09.222Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 18,
+  "fields": {
+    "name": "MixPad 7 Ultra",
+    "price": 850000,
+    "category": "smart_panels",
+    "description": "An all-in-one multi-protocol smart home gateway and central control panel that combines a 7-inch touchscreen with Zigbee 3.0, Wi-Fi, and Bluetooth connectivity. It provides centralized control of lighting and other smart-home devices, includes four built-in high-power lighting control outputs, infrared control for compatible appliances, voice interaction, and integrated stereo background audio.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895383/MixPad_7_Ultra_csoshn.webp",
+    "specs": [
+      "Connectivity: Zigbee 3.0, Wi-Fi, Bluetooth",
+      "Display: 7-inch Touchscreen, 1024 × 600",
+      "Power Supply: AC 100–240V, 50/60Hz",
+      "Built-in Switch: 4-Gang",
+      "Maximum Load: 400W/loop for 1/2 loop; 200W/loop for 3/4 loop",
+      "Audio: 4W Bass + 4W Treble + 2W Midrange",
+      "Dimensions: 237 × 111 × 11.3mm"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-07-22T17:29:02.752Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 19,
+  "fields": {
+    "name": "MixPad X",
+    "price": 700000,
+    "category": "smart_panels",
+    "description": "A full-screen smart home control panel and multi-protocol gateway designed to centralize control of connected devices and smart-home scenes. It features a 12.3-inch panoramic touchscreen, built-in stereo speakers, voice control, and support for Zigbee, Bluetooth, Wi-Fi, and RS485, allowing it to coordinate lighting, appliances, and other smart-home devices from a single wall-mounted interface. ORVIBO states that it can connect up to 300 Zigbee devices and support thousands of devices through gateway cascading.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895390/MixPad_X_f6ha9r.webp",
+    "specs": [
+      "Connectivity: Zigbee, Bluetooth, Wi-Fi, RS485",
+      "Display: 12.3-inch Touchscreen, 1920 × 720 Resolution",
+      "Power: AC 220V",
+      "Lighting Control: 2-Gang, Up to 600W per Circuit",
+      "Audio: 2 × 2.4W Stereo Speakers",
+      "Microphone: Four-Microphone Array, Up to 10m Far-Field Wake-up",
+      "Gateway Capacity: Up to 300 Zigbee Devices",
+      "Installation: Standard 86-Type Wall Box"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-08-19T19:59:10.371Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 20,
+  "fields": {
+    "name": "ZigBee Mini Hub",
+    "price": 65000,
+    "category": "smart_panels",
+    "description": "A compact ZigBee smart home hub that connects and manages multiple ORVIBO ZigBee devices, allowing them to work together to create automated smart scenes. It connects to the HomeMate app through your network and serves as the central bridge for compatible sensors, switches, and other ZigBee devices. ORVIBO states that the Mini Hub can support up to 100 ZigBee devices.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895391/ZigBee_Mini_Hub_kqqcth.webp",
+    "specs": [
+      "Connectivity: Zigbee HA, Ethernet",
+      "Power: DC 5V / 1A",
+      "Wireless Frequency: 2.4GHz",
+      "Capacity: Up to 100 Zigbee Devices",
+      "Encryption: AES-128",
+      "Dimensions: 88 × 90 × 27mm",
+      "App Support: ORVIBO HomeMate"
+    ],
+    "in_stock": true,
+    "featured": true,
+    "created_at": "2026-08-19T20:01:05.586Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 21,
+  "fields": {
+    "name": "Sky Dome Pro Ceiling Light",
+    "price": 3000000,
+    "category": "smart_lighting",
+    "description": "A premium smart ceiling light designed to recreate the visual experience of natural daylight indoors. It uses a multi-layer optical design and specialized LED light formula to simulate the blue-sky spectrum, while providing adjustable white light, RGBW ambient lighting, smooth dimming, and multiple atmospheric lighting effects. It supports smart control through Wi-Fi/Bluetooth, compatible control panels, and the ORVIBO smart-home ecosystem.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895372/SKY_DOME_PRO_dv6all.webp",
+    "specs": [
+      "Connectivity: Wi-Fi, Bluetooth",
+      "Power: 135W",
+      "Color Temperature: 2700K–6500K",
+      "Brightness: 0%–100% Dimming",
+      "Luminous Flux: ≥6600 lm",
+      "Color Rendering: Ra > 90",
+      "Light Output: 16 Million RGBW Colors",
+      "Glare Rating: UGR < 16",
+      "Installation: Ceiling Mount",
+      "Dimensions: Ø1066 × 122mm"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-08-19T20:16:12.321Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 22,
+  "fields": {
+    "name": "ZigBee RGB Relay",
+    "price": 130000,
+    "category": "smart_lighting",
+    "description": "A ZigBee lighting-control module designed to control RGB strip lights and RGB panel lights through the ORVIBO HomeMate app. It supports color selection, brightness adjustment, and color-temperature control from 2700K to 6500K, while also supporting lighting scenes, power-off memory, and ZigBee mesh networking. It operates with compatible 12V or 24V lighting systems.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895373/ZigBee_RGB_Relay_iwoxmx.webp",
+    "specs": [
+      "Connectivity: ZigBee HA",
+      "Power Supply: DC 12V / DC 24V",
+      "Max Load Current: 20A",
+      "Color Control: 16 Million Colors",
+      "Color Temperature: 2700K–6500K",
+      "Wireless Frequency: 2.4GHz",
+      "Encryption: AES-128",
+      "Dimensions: 70 × 70 × 23mm",
+      "Working Temperature: -20°C to 60°C"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-08-19T20:18:57.467Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 23,
+  "fields": {
+    "name": "SOPRO Smart Decorative Lights",
+    "price": 1650000,
+    "category": "smart_lighting",
+    "description": "A smart decorative lighting series designed to combine refined aesthetics with flexible smart lighting control. The SOPRO range includes dining, floor, and wall lighting options with adjustable brightness and color temperature, high color rendering, and Wi-Fi + Bluetooth connectivity. The dining chandelier uses layered upward and downward lighting to create a focused dining area while illuminating the surrounding atmosphere, while the floor light provides directional two-way lighting with a 350° adjustable head.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895372/SOPRO_Smart_Decorative_Lights_bduhqa.webp",
+    "specs": [
+      "Connectivity: Wi-Fi + Bluetooth (BLE)",
+      "Brightness: 1%–100% Adjustable",
+      "Color Temperature: 2700K–6000K",
+      "Color Rendering: Ra > 95",
+      "Smart Control: App, Voice & Smart Scenes",
+      "Dining Chandelier Power: 45W",
+      "Floor Light Power: 15W",
+      "Installation: Ceiling / Floor / Wall Depending on Model"
+    ],
+    "in_stock": true,
+    "featured": true,
+    "created_at": "2026-08-19T20:30:23.710Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 24,
+  "fields": {
+    "name": "Bach Series Smart Switch",
+    "price": 350000,
+    "category": "smart_switches",
+    "description": "A premium Zigbee smart lighting switch that combines a classic, refined design with modern smart-home control. The Bach Series uses a modular construction for easier installation, supports customizable button names, and functions as both a lighting controller and Zigbee network extender. It is designed for standard wall-box installation and supports a range of lighting loads.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895373/MixSwitch_Bach_Smart_Switch_8_mkzkhq.webp",
+    "specs": [
+      "Connectivity: Zigbee 3.0",
+      "Power: AC 220V, 50/60Hz",
+      "Load Capacity: Up to 800W per Loop",
+      "Configuration: 4-Gang / 8-Gang",
+      "Installation: Standard 86-Type Wall Box",
+      "Load Type: LED, Incandescent & Energy-Saving Lamps",
+      "Material: Metal Buttons",
+      "Dimensions: 86 × 86 × 38.3mm"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-08-19T20:44:08.093Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 25,
+  "fields": {
+    "name": "Defy Series Smart Switch",
+    "price": 350000,
+    "category": "smart_switches",
+    "description": "A premium smart switch series designed to combine conventional lighting control with whole-home smart automation. The Defy range includes 3-gang and 4-gang Zigbee switches as well as an advanced smart panel with a 2.41-inch IPS touchscreen, app-customizable buttons, proximity sensing, voice interaction, and infrared control. It supports lighting automation and can integrate with other devices in the ORVIBO ecosystem.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787200698/Defy_Series_Smart_Panel_npjzhw.webp",
+    "specs": [
+      "Connectivity: Wi-Fi, Bluetooth, Zigbee 3.0",
+      "Power: AC 220V L/N",
+      "Maximum Load: 800W per Loop, Total ≤1200W",
+      "Display: 2.41-inch IPS Touchscreen",
+      "Audio: Built-in 1W Speaker with Dual Microphones",
+      "Control: Touch, App, Voice & Infrared",
+      "Material: PC with Spray-Paint Finish",
+      "Dimensions: 92.5 × 86 × 38.9mm"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-08-20T04:43:11.351Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 26,
+  "fields": {
+    "name": "In Wall Switch",
+    "price": 75000,
+    "category": "smart_switches",
+    "description": "A compact Zigbee smart switch module designed to upgrade traditional single-live mechanical wall switches into smart lighting controls. It fits inside a standard switch box and allows manual control through the existing switch as well as remote control, scheduling, and scene automation through the ORVIBO Home app when connected to a compatible Zigbee hub.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895376/In_Wall_Switch_n1lsie.webp",
+    "specs": [
+      "Connectivity: Zigbee",
+      "Power: AC 110–240V, 50/60Hz",
+      "Load: Incandescent/Halogen ≤200W; LED/Fluorescent ≤100W",
+      "Model: R20W2Z",
+      "Dimensions: 46 × 50.5 × 18mm",
+      "Installation: In-Wall / Standard Switch Box",
+      "Operating Temperature: -20°C to 60°C"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-08-20T04:45:48.853Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 27,
+  "fields": {
+    "name": "Central A/C Control Panel",
+    "price": 180000,
+    "category": "smart_panels",
+    "description": "A Zigbee smart control panel designed to upgrade compatible fan-coil central air-conditioning systems with local and smartphone control. Working with an ORVIBO Zigbee smart hub, it supports remote operation through the HomeMate app, scheduling, and adjustment of cooling, heating, and ventilation modes, with temperature settings from 10°C to 30°C.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202364/Central_AC_Control_Panel_awqhyp.webp",
+    "specs": [
+      "Connectivity: Zigbee HA",
+      "Power: AC 100–240V, 50/60Hz",
+      "Temperature Range: 10°C–30°C",
+      "Control Precision: ±1°C",
+      "Load: 1A Inductive / 2A Resistive",
+      "Wireless Frequency: 2.4GHz, IEEE 802.15.4",
+      "Model: T10W1",
+      "Dimensions: 86 × 86 × 15mm",
+      "Installation: Wall Mount"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-08-20T05:07:55.778Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 28,
+  "fields": {
+    "name": "Door Sensor SM11",
+    "price": 55000,
+    "category": "home_security",
+    "description": "A compact Zigbee-based magnetic door and window sensor designed to monitor whether an entry point is open or closed. The SM11 uses a two-part magnetic design and can send alerts when the sensor and magnet separate, enabling security notifications and smart-home automation when paired with an ORVIBO Zigbee hub.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202365/Door_Sensor_SM11_jts0on.webp",
+    "specs": [
+      "Connectivity: Zigbee HA",
+      "Power: CR2032 Button Battery",
+      "Detection Type: Magnetic Door/Window Contact",
+      "Wireless Frequency: 2.4GHz",
+      "Communication Range: Up to 80m",
+      "Material: PC + ABS",
+      "Operating Temperature: -10°C to 50°C",
+      "Dimensions: 61.5 × 30.3 × 11.7mm (Sensor); 44.8 × 10.9 × 7.9mm (Magnet)",
+      "Installation: Door or Window Mount"
+    ],
+    "in_stock": true,
+    "featured": true,
+    "created_at": "2026-08-20T05:10:10.927Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 29,
+  "fields": {
+    "name": "Smart Door Lock C1",
+    "price": 1400000,
+    "category": "home_security",
+    "description": "A Wi-Fi smart door lock that provides keyless entry through fingerprint, password, card, mechanical key, smartphone app, and NFC. It features Swedish FPC biometric fingerprint recognition, remote security alerts, anti-theft protection, and integration with the ORVIBO HomeMate ecosystem for smart-home automation. ORVIBO also specifies a battery life of over 400 days under its test conditions.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202366/Smart_Door_Lock_C1_cov0zg.webp",
+    "specs": [
+      "Connectivity: Wi-Fi",
+      "Power: 4 × AA Batteries",
+      "Unlock Methods: Fingerprint, Password, Card, Mechanical Key, App, NFC",
+      "Fingerprint Sensor: Swedish FPC Biometric Sensor",
+      "User Capacity: Up to 25 Users",
+      "Battery Life: Up to 400 Days",
+      "Emergency Power: USB Type-C, DC 5V",
+      "Material: Aluminum Alloy, ABS & Tempered Glass",
+      "Installation: Standard Wooden & Security Doors"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-08-20T05:31:20.623Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 30,
+  "fields": {
+    "name": "Smart Door Lock S2",
+    "price": 650000,
+    "category": "home_security",
+    "description": "A smart fingerprint door lock designed for keyless and connected entry, combining fingerprint recognition, password access, NFC/encrypted cards, remote authorization, and a mechanical key. The S2 connects via Wi-Fi for networked functions and includes multiple security alarms for low battery, tampering, emergency unlocking, and failed authentication. ORVIBO specifies compatibility with standard wooden and security doors and a 35–60 mm door thickness range.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202366/Smart_Door_Lock_S2_i7v51g.webp",
+    "specs": [
+      "Connectivity: Wi-Fi",
+      "Power: 7.5V, 10 × LR6 Alkaline Batteries",
+      "Unlock Methods: Fingerprint, Password, NFC Card, Encryption Card, Remote Authorization, Mechanical Key",
+      "User Capacity: 25 Users + 5 Temporary Users",
+      "Security: Low-Voltage, Pry, Emergency Unlock & Failed Authentication Alarms",
+      "Emergency Power: USB Type-C, 5V",
+      "Door Compatibility: Wooden & Security Doors, 35–60mm Thickness",
+      "Material: Zinc Alloy, Stainless Steel & Tempered Glass",
+      "Operating Temperature: -20°C to 60°C"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-08-20T05:34:24.615Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 31,
+  "fields": {
+    "name": "Smart IP Camera S1",
+    "price": 160000,
+    "category": "home_security",
+    "description": "A 2K smart indoor IP camera designed for wide-area home monitoring with AI human detection, subject tracking, infrared night vision, abnormal-sound and crying detection, and two-way communication. Its pan-and-tilt design provides 360° horizontal and 210° vertical coverage, while dual-band Wi-Fi enables remote monitoring and smart-home security integration. ORVIBO also provides physical privacy shielding and supports local Micro SD or cloud storage.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202367/Smart_IP_Camera_S1_s359ns.webp",
+    "specs": [
+      "Connectivity: Wi-Fi 2.4GHz / 5GHz",
+      "Resolution: 2K (3MP)",
+      "Viewing Angle: 360° Horizontal / 210° Vertical",
+      "Night Vision: 10m IR HD + Low-Light Full-Color",
+      "Detection: AI Human Detection, Motion Tracking & Sound Detection",
+      "Audio: Two-Way Voice Communication",
+      "Storage: Micro SD up to 128GB & Cloud Storage",
+      "Power: DC 5V / 1A",
+      "Installation: Desktop or Wall Mount"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-08-20T05:36:51.949Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 32,
+  "fields": {
+    "name": "Smart Lock V5 Face",
+    "price": 2900000,
+    "category": "home_security",
+    "description": "A fully automatic smart door lock that combines AI 3D facial recognition, fingerprint access, NFC, passwords, cards, remote authorization, and mechanical key entry. It features a built-in 1080P visual doorbell with a 165° wide-angle camera and a 4-inch IPS HD indoor display for visitor monitoring and two-way communication. The V5 Face also supports smart-home integration and automatic locking for a seamless, secure entry experience.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202371/Smart_Lock_V5_Face_gujxkb.webp",
+    "specs": [
+      "Connectivity: Wi-Fi / Zigbee",
+      "Unlock Methods: 3D Face Recognition, Fingerprint, PIN, NFC, IC Card, App, MixPad, Mechanical Key",
+      "Camera: 1080P HD, 165° Wide-Angle",
+      "Display: 4-inch IPS HD Screen",
+      "Power: 7.4V Rechargeable Lithium Battery / USB-C Emergency Power",
+      "Battery Life: Up to 6 Months",
+      "Door Thickness: 40–120mm",
+      "Material: Zinc Alloy + Tempered Glass",
+      "Users: 1 Administrator + 49 Users + 4 Temporary Users",
+      "Installation: Compatible Wooden & Security Doors"
+    ],
+    "in_stock": true,
+    "featured": true,
+    "created_at": "2026-08-20T05:40:02.197Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 33,
+  "fields": {
+    "name": "Temperature Humidity Sensor",
+    "price": 55000,
+    "category": "home_security",
+    "description": "A compact Zigbee smart sensor that continuously monitors indoor temperature and humidity in real time. It can trigger smart-home automations based on environmental changes, such as adjusting an air conditioner or activating a humidifier, while providing low-battery warnings and app alerts. Its tool-free design allows flexible wall or tabletop placement.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202375/Temperature_Humidity_Sensor_jpzlip.webp",
+    "specs": [
+      "Connectivity: Zigbee",
+      "Power: 3V (AAA Battery)",
+      "Temperature Accuracy: ±0.3°C",
+      "Humidity Accuracy: ±3%",
+      "Detection Range: -10°C to +55°C",
+      "Wireless Range: Up to 80m (Open Environment)",
+      "Installation: Wall-Mounted or Tabletop",
+      "Dimensions: Ø61.2 × 23mm"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-08-20T05:46:47.810Z"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 4,
+  "fields": {
+    "product": 14,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895383/MixPad_Genie_ruoxer.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 5,
+  "fields": {
+    "product": 14,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895383/MixPad_Genie_1_sco1u5.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 6,
+  "fields": {
+    "product": 14,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895384/MixPad_Genie_2_jysprh.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 11,
+  "fields": {
+    "product": 16,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202372/Smoke_Sensor_SF30_mcdr21.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 12,
+  "fields": {
+    "product": 16,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202373/Smoke_Sensor_SF30_1_kgd8hn.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 13,
+  "fields": {
+    "product": 16,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202374/Smoke_Sensor_SF30_2_mcydva.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 14,
+  "fields": {
+    "product": 17,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202366/Water_Leakage_Sensor_SW30_iipbtu.png"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 15,
+  "fields": {
+    "product": 17,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202369/Water_Leakage_Sensor_SW30_1_hvbye7.png"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 16,
+  "fields": {
+    "product": 12,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895388/MixPad_M5_puxeab.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 21,
+  "fields": {
+    "product": 6,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895388/MixPad_S_ofrzvf.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 22,
+  "fields": {
+    "product": 18,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895383/MixPad_7_Ultra_csoshn.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 26,
+  "fields": {
+    "product": 12,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895389/MixPad_M5_1_t6g66p.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 27,
+  "fields": {
+    "product": 12,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895387/MixPad_M5_2_cwyhjv.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 28,
+  "fields": {
+    "product": 12,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895386/MixPad_M5_3_xdgwky.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 29,
+  "fields": {
+    "product": 12,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895387/MixPad_M5_4_chlt85.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 30,
+  "fields": {
+    "product": 6,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895388/MixPad_S_1_fa24cg.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 31,
+  "fields": {
+    "product": 6,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895389/MixPad_S_2_mcjya3.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 32,
+  "fields": {
+    "product": 6,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895389/MixPad_S_3_a0jyv5.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 33,
+  "fields": {
+    "product": 19,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895390/MixPad_X_f6ha9r.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 34,
+  "fields": {
+    "product": 19,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895389/MixPad_X_1_oas2g4.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 35,
+  "fields": {
+    "product": 20,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895391/ZigBee_Mini_Hub_kqqcth.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 36,
+  "fields": {
+    "product": 20,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895390/ZigBee_Mini__Hub_1_walkaw.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 37,
+  "fields": {
+    "product": 21,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895372/SKY_DOME_PRO_dv6all.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 41,
+  "fields": {
+    "product": 22,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895373/ZigBee_RGB_Relay_iwoxmx.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 42,
+  "fields": {
+    "product": 22,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895372/ZigBee_RGB_Relay_1_utwfmo.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 43,
+  "fields": {
+    "product": 23,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895372/SOPRO_Smart_Decorative_Lights_bduhqa.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 44,
+  "fields": {
+    "product": 23,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895372/SOPRO_Smart_Decorative_Lights_1_sy6kdm.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 45,
+  "fields": {
+    "product": 23,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895372/SOPRO_Smart_Decorative_Lights_2_jofu5e.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 46,
+  "fields": {
+    "product": 23,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895372/SOPRO_Smart_Decorative_Lights_3_uqj7fd.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 47,
+  "fields": {
+    "product": 24,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895373/MixSwitch_Bach_Smart_Switch_8_mkzkhq.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 48,
+  "fields": {
+    "product": 24,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895373/MixSwitch_Bach_Smart_Switch_8_1_tzlhda.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 49,
+  "fields": {
+    "product": 24,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895373/MixSwitch_Bach_Smart_Switch_8_2_wjiupq.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 50,
+  "fields": {
+    "product": 24,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895373/MixSwitch_Bach_Smart_Switch_8_3_s8o3ej.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 51,
+  "fields": {
+    "product": 25,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787200698/Defy_Series_Smart_Panel_npjzhw.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 52,
+  "fields": {
+    "product": 25,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787200698/Defy_Series_Smart_Panel_1_zdyved.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 53,
+  "fields": {
+    "product": 26,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895376/In_Wall_Switch_n1lsie.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 54,
+  "fields": {
+    "product": 26,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895376/In_Wall_Switch_1_w2x6q4.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 55,
+  "fields": {
+    "product": 27,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202364/Central_AC_Control_Panel_awqhyp.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 56,
+  "fields": {
+    "product": 27,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202366/Central_AC_Control_Panel_1_ewtphm.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 57,
+  "fields": {
+    "product": 28,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202365/Door_Sensor_SM11_jts0on.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 58,
+  "fields": {
+    "product": 28,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202365/Door_Sensor_SM11_1_zhsbjj.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 59,
+  "fields": {
+    "product": 29,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202366/Smart_Door_Lock_C1_cov0zg.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 60,
+  "fields": {
+    "product": 29,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202366/Smart_Door_Lock_C1_1_wtqtbr.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 61,
+  "fields": {
+    "product": 29,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202366/Smart_Door_Lock_C1_2_zsoglt.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 62,
+  "fields": {
+    "product": 30,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202366/Smart_Door_Lock_S2_i7v51g.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 63,
+  "fields": {
+    "product": 30,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202367/Smart_Door_Lock_S2_1_hkaf2a.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 64,
+  "fields": {
+    "product": 30,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202367/Smart_Door_Lock_S2_2_codsim.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 65,
+  "fields": {
+    "product": 30,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202367/Smart_Door_Lock_S2_3_h4exsr.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 66,
+  "fields": {
+    "product": 31,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202367/Smart_IP_Camera_S1_s359ns.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 67,
+  "fields": {
+    "product": 31,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202370/Smart_IP_Camera_S1_1_qj7ywa.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 68,
+  "fields": {
+    "product": 31,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202370/Smart_IP_Camera_S1_2_y9pun0.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 69,
+  "fields": {
+    "product": 32,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202371/Smart_Lock_V5_Face_gujxkb.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 70,
+  "fields": {
+    "product": 32,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202372/Smart_Lock_V5_Face_1_s6mlwn.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 71,
+  "fields": {
+    "product": 32,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202372/Smart_Lock_V5_Face_2_err1ja.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 72,
+  "fields": {
+    "product": 33,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202375/Temperature_Humidity_Sensor_jpzlip.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 73,
+  "fields": {
+    "product": 33,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202375/Temperature_Humidity_Sensor_1_isnhc8.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 74,
+  "fields": {
+    "product": 33,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202376/Temperature_Humidity_Sensor_2_lb4dbg.webp"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 75,
+  "fields": {
+    "product": 17,
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202369/Water_Leakage_Sensor_SW30_2_clynv3.png"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 10,
+  "fields": {
+    "product": 6,
+    "name": "Chinedu Okafor",
+    "text": "Easy to set up and it connected all my Zigbee devices quickly. Has been stable since installation.",
+    "rating": 5,
+    "created_at": "2026-06-18T11:58:17.271Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 11,
+  "fields": {
+    "product": 6,
+    "name": "Adebayo Olumide",
+    "text": "Works well overall, but I had to restart it once during initial pairing. After that, it’s been fine.",
+    "rating": 4,
+    "created_at": "2026-06-18T11:58:50.874Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 12,
+  "fields": {
+    "product": 6,
+    "name": "Ifeoma Nwosu",
+    "text": "Compact design is a plus and it doesn’t take space. Integration with my smart switches is smooth.",
+    "rating": 5,
+    "created_at": "2026-06-18T11:59:17.501Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 13,
+  "fields": {
+    "product": 6,
+    "name": "Emeka Ugochukwu",
+    "text": "It gets the job done, but the setup process wasn’t very beginner-friendly. Took some trial and error.",
+    "rating": 3,
+    "created_at": "2026-06-18T11:59:44.601Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 14,
+  "fields": {
+    "product": 6,
+    "name": "Oluwaseun Adeyemi",
+    "text": "Very reliable hub. My lights and sensors respond faster now compared to my old setup.",
+    "rating": 5,
+    "created_at": "2026-06-18T12:00:07.661Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 15,
+  "fields": {
+    "product": 6,
+    "name": "Ngozi Chukwu",
+    "text": "Performance is solid, but I wish the app gave more detailed feedback during pairing.",
+    "rating": 4,
+    "created_at": "2026-06-18T12:00:38.241Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 16,
+  "fields": {
+    "product": 6,
+    "name": "Daniel Olatunji",
+    "text": "Strong connectivity and no drops so far. It handles multiple devices without issues.",
+    "rating": 5,
+    "created_at": "2026-06-18T12:01:03.903Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 38,
+  "fields": {
+    "product": 12,
+    "name": "Femi Adegbola",
+    "text": "Very solid central control panel. I like having lighting and security controls in one place.",
+    "rating": 5,
+    "created_at": "2026-06-18T12:22:05.073Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 39,
+  "fields": {
+    "product": 12,
+    "name": "Chioma Umeh",
+    "text": "Works well and feels premium, but the interface took me a bit of time to understand fully.",
+    "rating": 4,
+    "created_at": "2026-06-18T12:22:32.417Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 40,
+  "fields": {
+    "product": 12,
+    "name": "Suleiman Adamu",
+    "text": "Good device overall. It controls my smart home reliably, but setup wasn’t very straightforward.",
+    "rating": 4,
+    "created_at": "2026-06-18T12:22:57.931Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 41,
+  "fields": {
+    "product": 12,
+    "name": "Kehinde Oladipo",
+    "text": "Not bad, but I expected faster response when switching between scenes.",
+    "rating": 3,
+    "created_at": "2026-06-18T12:23:29.003Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 42,
+  "fields": {
+    "product": 12,
+    "name": "Ibrahim Danjuma",
+    "text": "Very reliable after setup. It has made controlling my home automation much easier.",
+    "rating": 5,
+    "created_at": "2026-06-18T12:23:57.581Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 43,
+  "fields": {
+    "product": 14,
+    "name": "Aminu Garba",
+    "text": "Very good smart panel. It connects different devices easily and keeps everything in one control point.",
+    "rating": 5,
+    "created_at": "2026-06-18T12:24:47.392Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 44,
+  "fields": {
+    "product": 14,
+    "name": "Ezinne Okechukwu",
+    "text": "Solid performance, but the interface took some time to get used to at first.",
+    "rating": 4,
+    "created_at": "2026-06-18T12:25:19.257Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 45,
+  "fields": {
+    "product": 14,
+    "name": "Babatunde Salami",
+    "text": "Works fine overall, but I noticed slight delays when switching between complex scenes.",
+    "rating": 3,
+    "created_at": "2026-06-18T12:26:00.753Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 46,
+  "fields": {
+    "product": 14,
+    "name": "Luca Bianchi",
+    "text": "Decent device, but I feel the price is a bit high for what it currently offers.",
+    "rating": 3,
+    "created_at": "2026-06-18T12:26:29.069Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 50,
+  "fields": {
+    "product": 16,
+    "name": "Nkechi Omeh",
+    "text": "Loud alarm and fast detection. Gives peace of mind knowing it responds quickly to smoke.",
+    "rating": 5,
+    "created_at": "2026-06-18T13:13:52.279Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 51,
+  "fields": {
+    "product": 16,
+    "name": "Aliyu Bashir",
+    "text": "Works well, but I tested it and the alarm is quite sensitive even to light smoke.",
+    "rating": 4,
+    "created_at": "2026-06-18T13:14:25.925Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 52,
+  "fields": {
+    "product": 16,
+    "name": "Seun Adebiran",
+    "text": "Works fine, but battery life could be better based on my usage.",
+    "rating": 3,
+    "created_at": "2026-06-18T13:14:57.502Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 53,
+  "fields": {
+    "product": 17,
+    "name": "Chiamaka Okoye",
+    "text": "Very helpful device. It detected a small kitchen leak early and saved me from damage.",
+    "rating": 5,
+    "created_at": "2026-06-18T13:15:29.701Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 54,
+  "fields": {
+    "product": 17,
+    "name": "Yakubu Danjuma",
+    "text": "Works as expected, but sometimes takes a second or two before sending alerts.",
+    "rating": 4,
+    "created_at": "2026-06-18T13:15:55.865Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 55,
+  "fields": {
+    "product": 17,
+    "name": "Grace Nkansah",
+    "text": "Reliable and simple to use. I placed it under my sink and it works perfectly.",
+    "rating": 5,
+    "created_at": "2026-06-18T13:16:21.469Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 56,
+  "fields": {
+    "product": 18,
+    "name": "Ahmed Muhammadu",
+    "text": "The 7-inch display is clear and responsive, and having my lights and other devices accessible from one panel makes things much easier.",
+    "rating": 5,
+    "created_at": "2026-08-21T04:51:54.039Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 57,
+  "fields": {
+    "product": 18,
+    "name": "Chukwudi Okafor",
+    "text": "Installation was straightforward and the interface is easy to understand. I particularly like being able to control different devices without switching between apps.",
+    "rating": 4,
+    "created_at": "2026-08-21T04:52:24.332Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 58,
+  "fields": {
+    "product": 18,
+    "name": "Osagie Eghobamien",
+    "text": "The screen is good and the controls respond quickly. The audio is also better than I expected from a wall-mounted panel.",
+    "rating": 4,
+    "created_at": "2026-08-21T04:52:47.954Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 59,
+  "fields": {
+    "product": 18,
+    "name": "Terna Iorfa",
+    "text": "It works well, but the interface took me some time to get used to. Once everything was set up, controlling the lights became much more convenient.",
+    "rating": 3,
+    "created_at": "2026-08-21T04:53:12.801Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 60,
+  "fields": {
+    "product": 18,
+    "name": "Emily Carter",
+    "text": "A very capable smart-home panel. The centralised control is excellent, although I think the initial setup could be a little simpler.",
+    "rating": 5,
+    "created_at": "2026-08-21T04:53:45.732Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 61,
+  "fields": {
+    "product": 19,
+    "name": "Nneka Eze",
+    "text": "The large screen makes controlling the different smart-home functions very convenient. It also looks excellent on the wall.",
+    "rating": 5,
+    "created_at": "2026-08-21T04:55:11.692Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 62,
+  "fields": {
+    "product": 19,
+    "name": "Abdulrahman Sani",
+    "text": "The display is impressive and the controls are responsive. Setup took a little patience, but everything has been working reliably since.",
+    "rating": 4,
+    "created_at": "2026-08-21T04:55:33.621Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 63,
+  "fields": {
+    "product": 19,
+    "name": "Efe Omoregie",
+    "text": "I like having so many controls in one place. The screen is particularly useful when managing multiple rooms and scenes.",
+    "rating": 5,
+    "created_at": "2026-08-21T04:55:55.635Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 64,
+  "fields": {
+    "product": 19,
+    "name": "Chiamaka Nwosu",
+    "text": "Good smart panel with a premium feel. I had some trouble getting everything configured initially, but the performance has been solid.",
+    "rating": 4,
+    "created_at": "2026-08-21T04:56:16.683Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 65,
+  "fields": {
+    "product": 19,
+    "name": "Daniel Mwangi",
+    "text": "The panel looks great and the large display is useful. It is quite expensive, though, especially compared with smaller control panels.",
+    "rating": 3,
+    "created_at": "2026-08-21T04:56:36.053Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 66,
+  "fields": {
+    "product": 20,
+    "name": "Yusuf Abdullahi",
+    "text": "Small and easy to set up. It connects my Zigbee devices reliably and I haven't had any connection issues so far.",
+    "rating": 5,
+    "created_at": "2026-08-21T04:57:35.422Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 67,
+  "fields": {
+    "product": 20,
+    "name": "Adaobi Nnamani",
+    "text": "It does exactly what I needed. My sensors and switches connect through it without any noticeable delays.",
+    "rating": 4,
+    "created_at": "2026-08-21T04:57:57.655Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 68,
+  "fields": {
+    "product": 20,
+    "name": "Bright Akpan",
+    "text": "The hub is compact and works well with my other smart-home devices. Setup instructions could be clearer, though.",
+    "rating": 4,
+    "created_at": "2026-08-21T04:58:16.374Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 69,
+  "fields": {
+    "product": 21,
+    "name": "Bamidele Adebayo",
+    "text": "The light looks incredible when installed. The brightness and colour adjustment give the room a completely different feel.",
+    "rating": 5,
+    "created_at": "2026-08-21T04:59:08.007Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 70,
+  "fields": {
+    "product": 21,
+    "name": "Fatima Garba",
+    "text": "Very impressive ceiling light. It is bright, the colours are beautiful, and the smart controls work smoothly.",
+    "rating": 5,
+    "created_at": "2026-08-21T04:59:34.552Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 71,
+  "fields": {
+    "product": 23,
+    "name": "Ifeoma Umeh",
+    "text": "The design is elegant and the lighting gives the room a much more refined look. I especially like adjusting the colour temperature depending on the time of day.",
+    "rating": 5,
+    "created_at": "2026-08-21T05:01:08.088Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 72,
+  "fields": {
+    "product": 23,
+    "name": "Ahmed Lawal",
+    "text": "The light looks good and the app controls are convenient. Installation was a little more involved than I expected, but the result was worth it.",
+    "rating": 4,
+    "created_at": "2026-08-21T05:01:33.675Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 73,
+  "fields": {
+    "product": 23,
+    "name": "Oghenekaro Efe",
+    "text": "Good quality light with a premium finish. The brightness is sufficient for my space and the smart features have been reliable.",
+    "rating": 4,
+    "created_at": "2026-08-21T05:01:55.263Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 74,
+  "fields": {
+    "product": 23,
+    "name": "Chinedu Mbah",
+    "text": "I like the overall design and the quality of the light. It is quite expensive, but it feels well made.",
+    "rating": 4,
+    "created_at": "2026-08-21T05:02:17.769Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 75,
+  "fields": {
+    "product": 23,
+    "name": "Grace Wanjiku",
+    "text": "The lighting is beautiful and works well for creating different moods. The smart setup took some time, though.",
+    "rating": 4,
+    "created_at": "2026-08-21T05:02:41.955Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 76,
+  "fields": {
+    "product": 23,
+    "name": "Tunde Ogunleye",
+    "text": "The floor light looks stylish and the adjustable head is useful. I just wish the app had a few more customization options.",
+    "rating": 3,
+    "created_at": "2026-08-21T05:03:03.425Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 77,
+  "fields": {
+    "product": 24,
+    "name": "Emeka Nwankwo",
+    "text": "The switch feels very solid and premium. The buttons have a nice tactile response, and controlling the lights remotely is convenient.",
+    "rating": 5,
+    "created_at": "2026-08-21T05:04:05.481Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 78,
+  "fields": {
+    "product": 24,
+    "name": "Hauwa Ibrahim",
+    "text": "Clean design and easy to use once connected. It works well with my smart-home setup and the physical buttons still work perfectly.",
+    "rating": 4,
+    "created_at": "2026-08-21T05:04:27.755Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 79,
+  "fields": {
+    "product": 24,
+    "name": "Rotimi Adekunle",
+    "text": "Good switch with a nice finish. The installation took longer than expected, but the smart controls have been reliable.",
+    "rating": 4,
+    "created_at": "2026-08-21T05:04:48.609Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 80,
+  "fields": {
+    "product": 24,
+    "name": "Esosa Igbinovia",
+    "text": "The design is nice and it works as advertised, but I think the price is a little high for a smart switch.",
+    "rating": 3,
+    "created_at": "2026-08-21T05:05:07.658Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 81,
+  "fields": {
+    "product": 26,
+    "name": "Sikirat Yusuf",
+    "text": "Very useful for upgrading my existing light switch without changing the whole setup. It responds quickly and has been reliable so far.",
+    "rating": 5,
+    "created_at": "2026-08-21T05:06:05.680Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 82,
+  "fields": {
+    "product": 26,
+    "name": "Uchechukwu Obi",
+    "text": "Small enough to fit behind the switch and the installation was fairly straightforward. The remote control feature is what I like most.",
+    "rating": 4,
+    "created_at": "2026-08-21T05:06:26.441Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 83,
+  "fields": {
+    "product": 28,
+    "name": "Mfoniso Etim",
+    "text": "Small, discreet, and works exactly as expected. I get an alert whenever the door is opened, which gives me extra peace of mind.",
+    "rating": 5,
+    "created_at": "2026-08-21T05:07:10.695Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 84,
+  "fields": {
+    "product": 30,
+    "name": "Abdulbasit Musa",
+    "text": "The fingerprint unlock is fast and convenient. I rarely need to carry keys anymore, and the lock has been working reliably.",
+    "rating": 5,
+    "created_at": "2026-08-21T05:08:16.708Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 85,
+  "fields": {
+    "product": 30,
+    "name": "Amarachi Eze",
+    "text": "I like having several ways to unlock the door, especially the fingerprint and password options. Setup was a little confusing at first.",
+    "rating": 4,
+    "created_at": "2026-08-21T05:08:36.661Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 86,
+  "fields": {
+    "product": 30,
+    "name": "Kelechi Nwosu",
+    "text": "The lock feels sturdy and the security features are good. It is a bit expensive, but the convenience makes it worthwhile.",
+    "rating": 4,
+    "created_at": "2026-08-21T05:08:58.067Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 87,
+  "fields": {
+    "product": 31,
+    "name": "Salihu Mohammed",
+    "text": "The image quality is clear, even at night, and the motion tracking works better than I expected. The app notifications are also useful.",
+    "rating": 5,
+    "created_at": "2026-08-21T05:09:43.210Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 88,
+  "fields": {
+    "product": 31,
+    "name": "Eniola Balogun",
+    "text": "Good camera with a wide viewing angle. Setup was fairly easy, although the app took me a little while to get used to.",
+    "rating": 4,
+    "created_at": "2026-08-21T05:10:09.509Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 89,
+  "fields": {
+    "product": 33,
+    "name": "Favour Osei",
+    "text": "Small sensor but very useful. The temperature and humidity readings have been consistent, and I like being able to check them remotely.",
+    "rating": 5,
+    "created_at": "2026-08-21T05:14:41.308Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 90,
+  "fields": {
+    "product": 33,
+    "name": "Mustapha Lawal",
+    "text": "Easy to install and the readings are displayed clearly in the app. It has been working reliably since I set it up.",
+    "rating": 5,
+    "created_at": "2026-08-21T05:15:04.626Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 91,
+  "fields": {
+    "product": 33,
+    "name": "Efe Ojo",
+    "text": "Does what it is supposed to do and doesn't take up much space. The battery has also lasted well so far.",
+    "rating": 4,
+    "created_at": "2026-08-21T05:15:30.185Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 92,
+  "fields": {
+    "product": 33,
+    "name": "Chisom Nwafor",
+    "text": "The sensor is accurate enough for monitoring my room, although I would have preferred a display on the device itself.",
+    "rating": 4,
+    "created_at": "2026-08-21T05:16:04.121Z"
+  }
+},
+{
+  "model": "products.review",
+  "pk": 93,
+  "fields": {
+    "product": 33,
+    "name": "Terseer Aondofa",
+    "text": "Works well for basic temperature and humidity monitoring. The app setup was slightly confusing at first, but everything is fine now.",
+    "rating": 3,
+    "created_at": "2026-08-21T05:16:35.029Z"
+  }
+}
+]

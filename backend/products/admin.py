@@ -31,3 +31,7 @@ class ReviewAdmin(admin.ModelAdmin):
     list_display = ('product', 'name', 'rating', 'created_at')
     list_filter = ('rating',)
     search_fields = ('name', 'text')
+ 
+admin.site.site_header = 'GerarNest Administration'
+admin.site.site_title = 'GerarNest Admin'
+admin.site.index_title = 'GerarNest Dashboard'
