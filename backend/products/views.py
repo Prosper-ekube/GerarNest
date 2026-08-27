@@ -62,7 +62,13 @@ def initialize_payment(request):
             "authorization_url": data["data"]["authorization_url"]
         })
 
-    return Response({"error": "Payment init failed"}, status=400)
+    return Response(
+        {
+            "error": "Payment init failed",
+            "paystack_response": data,
+        },
+        status=status.HTTP_400_BAD_REQUEST
+    )
         
 
 @api_view(['GET'])
