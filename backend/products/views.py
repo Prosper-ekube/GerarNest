@@ -48,7 +48,7 @@ def initialize_payment(request):
         "email": order.email,
         "amount": order.amount * 100,  # Paystack uses kobo
         "reference": f"order_{order.id}",
-        "callback_url": "http://localhost:5173/payment-success"
+        "callback_url": f"{settings.FRONTEND_URL}/payment-success"
     }
 
     response = requests.post(url, json=payload, headers=headers)

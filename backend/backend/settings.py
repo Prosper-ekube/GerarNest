@@ -141,3 +141,4 @@ CORS_ALLOWED_ORIGINS = ['http://localhost:5173', 'https://gerarnest.vercel.app']
 PAYSTACK_SECRET_KEY = config('PAYSTACK_SECRET_KEY')
 PAYSTACK_PUBLIC_KEY = config('PAYSTACK_PUBLIC_KEY')
 PAYSTACK_BASE_URL = 'https://api.paystack.co'
+FRONTEND_URL = config('FRONTEND_URL')
