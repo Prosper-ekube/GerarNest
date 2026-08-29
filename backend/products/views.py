@@ -48,7 +48,7 @@ def initialize_payment(request):
         "email": order.email,
         "amount": order.amount * 100,  # Paystack uses kobo
         "reference": f"order_{order.id}",
-        "callback_url": "http://localhost:5173/payment-success"
+        "callback_url": f"{settings.FRONTEND_URL}/payment-success"
     }
 
     response = requests.post(url, json=payload, headers=headers)
@@ -62,7 +62,13 @@ def initialize_payment(request):
             "authorization_url": data["data"]["authorization_url"]
         })
 
-    return Response({"error": "Payment init failed"}, status=400)
+    return Response(
+        {
+            "error": "Payment init failed",
+            "paystack_response": data,
+        },
+        status=status.HTTP_400_BAD_REQUEST
+    )
         
 
 @api_view(['GET'])
