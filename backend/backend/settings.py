@@ -136,7 +136,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = (
     'whitenoise.storage.CompressedManifestStaticFilesStorage'
 )
-CORS_ALLOWED_ORIGINS = ['http://localhost:5173', 'https://gerarnest.vercel.app', 'https://gerarnest.com']
+CORS_ALLOWED_ORIGINS = ['http://localhost:5173', 'https://gerarnest.vercel.app', 'https://gerarnest.com', 'https://www.gerarnest.com']
 
 PAYSTACK_SECRET_KEY = config('PAYSTACK_SECRET_KEY')
 PAYSTACK_PUBLIC_KEY = config('PAYSTACK_PUBLIC_KEY')
