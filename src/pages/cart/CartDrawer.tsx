@@ -73,7 +73,10 @@ const CartDrawer = ({
                                             {item.name}
                                         </h3>
                                         <p className='mt-1 text-[#6f4ccf]'>
-                                            ₦{item.price.toLocaleString()}
+                                            ₦{Number(total).toLocaleString('en-NG', {
+                                                minimumFractionDigits: 2,
+                                                maximumFractionDigits: 2,
+                                            })}
                                         </p>
                                         <div className='mt-3 flex items-center gap-3'>
                                             <button
@@ -116,7 +119,11 @@ const CartDrawer = ({
                     <div className='mb-5 space-y-2 text-sm'>
                         <div className='flex justify-between text-[#a8a8a8]'>
                             <span>Subtotal</span>
-                            <span>₦{total.toLocaleString()}</span>
+                            <span>₦{Number(total).toLocaleString('en-NG', {
+                                minimumFractionDigits: 2,
+                                maximumFractionDigits: 2,
+                                })}
+                            </span>
                         </div>
                         <div className='flex justify-between text-[#a8a8a8]'>
                             <span>Shipping</span>
@@ -124,7 +131,11 @@ const CartDrawer = ({
                         </div>
                         <div className='border-t border-white/10 pt-3 flex justify-between text-lg font-semibold text-white'>
                             <span>Total</span>
-                            <span>₦{total.toLocaleString()}</span>
+                            <span>₦{Number(total).toLocaleString('en-NG', {
+                                minimumFractionDigits: 2,
+                                maximumFractionDigits: 2,
+                            })}
+                            </span>
                         </div>
                     </div>
 

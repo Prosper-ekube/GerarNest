@@ -46,7 +46,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                     </div>
 
                     <p className='mb-4 text-2xl font-bold text-[#6f4ccf]'>
-                        ₦{product.price.toLocaleString()}
+                        ₦{Number(product.price).toLocaleString('en-NG', {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                        })}
                     </p>
 
                     {!product.in_stock && (

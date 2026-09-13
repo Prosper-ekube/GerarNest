@@ -9,7 +9,7 @@ class Product(models.Model):
     ]
 
     name = models.CharField(max_length=255)
-    price = models.IntegerField()
+    price = models.DecimalField(max_digits=12, decimal_places=2)
     category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
     description = models.TextField()
     image = models.URLField(blank=True, null=True)

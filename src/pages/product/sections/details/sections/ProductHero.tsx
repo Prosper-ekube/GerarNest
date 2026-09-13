@@ -61,7 +61,10 @@ const ProductHero = ({ product }: Props) => {
                 </p>
 
                 <p className='text-[#6F4CCF] text-4xl font-bold mt-8'>
-                    ₦{Number(product.price).toLocaleString()}
+                    ₦{Number(product.price).toLocaleString('en-NG', {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                    })}
                 </p>
 
                 <ul className='space-y-3 mt-8 mb-10 text-white text-sm'>

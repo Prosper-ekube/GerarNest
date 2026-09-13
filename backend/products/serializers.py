@@ -19,6 +19,11 @@ class ProductSerializer(serializers.ModelSerializer):
     reviews_list = ReviewSerializer(many=True, read_only=True)
     review_count = serializers.SerializerMethodField()
     rating = serializers.SerializerMethodField()
+    price = serializers.DecimalField(
+        max_digits=12,
+        decimal_places=2,
+        coerce_to_string=True
+    )
 
     class Meta:
         model = Product
