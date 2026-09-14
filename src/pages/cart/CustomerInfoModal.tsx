@@ -101,16 +101,23 @@ const CustomerInfoModal = ({ isOpen, items, onClose, onSubmit }: Props) => {
                     }
                 );
 
-                if (!paymentRes.ok) {
-                    throw new Error('Payment initialization failed.');
-                }
-
                 const paymentData = await paymentRes.json();
 
+                if (!paymentRes.ok) {
+                    console.error('Payment initialization failed:', paymentData);
+
+                    setError('We couldn\'t start your payment. Please try again.');
+                    return;
+                }
+
                 if (!paymentData.authorization_url) {
-                    throw new Error(
-                        'No payment authorization URL was returned.'
+                    console.error(
+                        'Payment authorization URL missing:',
+                        paymentData
                     );
+
+                    setError('We couldn\'t start your payment. Please try again.');
+                    return;
                 }
 
                 window.location.href = paymentData.authorization_url;
@@ -120,11 +127,10 @@ const CustomerInfoModal = ({ isOpen, items, onClose, onSubmit }: Props) => {
             onClose();
 
         } catch (error) {
-            console.error(error);
+            console.error('Checkout error:', error);
+
             setError(
-                error instanceof Error
-                    ? error.message
-                    : 'Unable to start checkout. Please try again.'
+                'Unable to start checkout. Please try again.'
             );
         } finally {
             setLoading(false);
