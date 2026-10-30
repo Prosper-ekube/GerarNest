@@ -22,8 +22,8 @@ const ProductSection: React.FC<ProductGridProps> = ({
     }
 
     const gridClasses = responsive
-        ? 'grid-cols-1 min-[1024px]:grid-cols-2'
-        : `sm:grid-cols-2 ${cols ? gridColsMap[cols] : 'lg:grid-cols-3'}`
+        ? 'grid-cols-1 min-[1024px]:grid-cols-2 min-[1280px]:grid-cols-3'
+        : `sm:grid-cols-2 ${cols ? gridColsMap[cols] : 'xl:grid-cols-3'}`
 
     return (
         <div className={`grid gap-6 ${gridClasses}`}>
