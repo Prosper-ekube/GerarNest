@@ -14,7 +14,7 @@ const Hero: React.FC<HeroProps> = ({ onSearch }) => {
 
     return (
         <section
-            className='relative pt-24 md:pt-36 pb-16 px-6 lg:px-8 bg-cover bg-center'
+            className='relative pt-28 md:pt-36 pb-16 px-6 lg:px-8 bg-cover bg-center'
             style={{ backgroundImage: 'url(/path-to-your-hero-image.jpg)' }}
         >
             <div className='absolute inset-0 bg-[#0a0a0a]/90' />

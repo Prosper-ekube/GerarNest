@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import useProducts from '../../../hooks/useProducts'
@@ -31,15 +32,37 @@ const ProductGrid: React.FC<ProductGridProps> = ({ searchQuery }) => {
         useState<CategoryValue>('all')
 
     const [currentPage, setCurrentPage] = useState(1)
+
+    const [maxVisiblePages, setMaxVisiblePages] = useState(() =>
+        window.innerWidth < 768 ? 2 : window.innerWidth < 1024 ? 3 : 8
+    )
+
     const itemsPerPage = 6
 
     useEffect(() => {
+        const updateVisiblePages = () => {
+            if (window.innerWidth < 768) {
+                setMaxVisiblePages(2)
+            } else if (window.innerWidth < 1024) {
+                setMaxVisiblePages(3)
+            } else {
+                setMaxVisiblePages(8)
+            }
+        }
+
+        window.addEventListener('resize', updateVisiblePages)
+
+        return () => window.removeEventListener('resize', updateVisiblePages)
+    }, [])
+
+    useEffect(() => {
         const hash = window.location.hash.replace('#', '') as CategoryValue
+
         if (categories.some(cat => cat.value === hash)) {
             setSelectedCategory(hash)
             setCurrentPage(1)
         }
-    }, [location?.hash])
+    }, [location.hash])
 
     if (loading) return <p className='text-white'>Loading...</p>
 
@@ -61,24 +84,55 @@ const ProductGrid: React.FC<ProductGridProps> = ({ searchQuery }) => {
         startIndex + itemsPerPage
     )
 
+    const visiblePages = (() => {
+        if (totalPages <= maxVisiblePages + 1) {
+            return Array.from({ length: totalPages }, (_, i) => i + 1)
+        }
+
+        if (currentPage <= maxVisiblePages) {
+            return [
+                ...Array.from(
+                    { length: maxVisiblePages },
+                    (_, i) => i + 1
+                ),
+                totalPages
+            ]
+        }
+
+        const startPage = Math.min(
+            currentPage - 1,
+            totalPages - maxVisiblePages
+        )
+
+        return [
+            ...Array.from(
+                { length: maxVisiblePages },
+                (_, i) => startPage + i
+            ),
+            totalPages
+        ]
+    })()
+
     const handleCategoryChange = (category: CategoryValue) => {
         setSelectedCategory(category)
         setCurrentPage(1)
         window.scrollTo({ top: 0, behavior: 'smooth' })
+
         // Update URL hash
         window.history.pushState(null, '', `#${category}`)
     }
 
     return (
-        <section className='py-20 px-6 lg:px-8 bg-[#0a0a0a] overflow-hidden'>
+        <section className='py-20 px-6 lg:px-8 bg-[#0a0a0a]'>
             <div className='max-w-6xl mx-auto'>
-                <div className='grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-8'>
-
+                <div className='grid grid-cols-1 min-[744px]:grid-cols-[280px_minmax(0,1fr)] gap-8'>
                     {/* Sidebar */}
-                    <aside className='w-full space-y-6'>
+                    <aside className='w-full space-y-6 sm:sticky sm:self-start'>
                         <div className='border border-[#6f4ccf]/20 rounded-2xl overflow-hidden bg-[#1a1a2e]'>
                             <div className='p-4'>
-                                <h3 className='font-bold text-base text-white'>Category</h3>
+                                <h3 className='font-bold text-base text-white'>
+                                    Category
+                                </h3>
                             </div>
 
                             <ul className='p-4 pt-0 space-y-3'>
@@ -86,7 +140,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ searchQuery }) => {
                                     <li key={cat.value}>
                                         <button
                                             onClick={() => {
-                                                handleCategoryChange(cat.value)                                                
+                                                handleCategoryChange(cat.value)
                                             }}
                                             className={`w-full flex items-center gap-3 p-2 rounded-lg transition-colors ${selectedCategory === cat.value
                                                     ? 'bg-[#6f4ccf]/20 text-[#6f4ccf]'
@@ -108,6 +162,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ searchQuery }) => {
                         <ProductSection
                             products={paginatedProducts}
                             cols={3}
+                            responsive
                         />
 
                         {/* Pagination */}
@@ -125,20 +180,22 @@ const ProductGrid: React.FC<ProductGridProps> = ({ searchQuery }) => {
                             </button>
 
                             <div className='flex items-center gap-2'>
-                                {Array.from(
-                                    { length: totalPages },
-                                    (_, i) => i + 1
-                                ).map(page => (
-                                    <button
-                                        key={page}
-                                        onClick={() => setCurrentPage(page)}
-                                        className={`w-10 h-10 rounded-lg font-medium transition-colors ${currentPage === page
-                                                ? 'bg-[#6f4ccf] text-white'
-                                                : 'text-white hover:bg-[#6f4ccf]/20 border border-[#6f4ccf]/20'
-                                            }`}
-                                    >
-                                        {page}
-                                    </button>
+                                {visiblePages.map((page, index) => (
+                                    <React.Fragment key={page}>
+                                        {index > 0 && page - visiblePages[index - 1] > 1 && (
+                                            <span className='text-white/60'>...</span>
+                                        )}
+
+                                        <button
+                                            onClick={() => setCurrentPage(page)}
+                                            className={`w-10 h-10 rounded-lg font-medium transition-colors ${currentPage === page
+                                                    ? 'bg-[#6f4ccf] text-white'
+                                                    : 'text-white hover:bg-[#6f4ccf]/20 border border-[#6f4ccf]/20'
+                                                }`}
+                                        >
+                                            {page}
+                                        </button>
+                                    </React.Fragment>
                                 ))}
                             </div>
 
@@ -155,7 +212,6 @@ const ProductGrid: React.FC<ProductGridProps> = ({ searchQuery }) => {
                             </button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

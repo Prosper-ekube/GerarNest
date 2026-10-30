@@ -5,7 +5,7 @@ import Product from '../pages/product/Product';
 import ProductDetails from '../pages/product/sections/details/ProductDetails';
 import PaymentSuccess from '../pages/PaymentSuccess';
 import Contact from "../pages/contact/Contact";
-import AdminProducts from '../pages/admin/AdminProducts';
+import Tour from '../pages/tour/Tour';
 import PaymentFailed from '../pages/PaymentFailed';
 import { CartProvider } from '../context/CartContext';
 import ScrollToTop from '../components/ui/ScrollToTop';
@@ -19,7 +19,7 @@ const AppRoutesWithTransition = () => {
                 <Route path='/product' element={<Product />} />
                 <Route path='/products/:id' element={<ProductDetails />} />
                 <Route path='/contact' element={<Contact />} />
-                <Route path='/admin/products' element={<AdminProducts />} />
+                <Route path='/tour' element={<Tour />} />
                 <Route path='/payment-success' element={<PaymentSuccess />} />
                 <Route path='/payment-failed' element={<PaymentFailed />} />
             </Routes>

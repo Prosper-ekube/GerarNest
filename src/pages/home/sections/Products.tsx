@@ -11,7 +11,7 @@ const Products: React.FC = () => {
 
     return (
         <section className='bg-[#0a0a0a] pb-20 pt-10 lg:pt-20 px-6 lg:px-8'>
-            <div className='mx-auto max-w-6xl'>
+            <div className='mx-auto lg:max-w-6xl'>
                 <div className='mb-16 text-center'>
                     <span className='text-[#6f4ccf] text-base font-semibold tracking-wider uppercase'>Our Products</span>
                     <h2 className='mt-4 mb-4 text-4xl lg:text-4xl font-bold text-white'>Featured Smart <span className='text-[#6f4ccf]'>Devices</span></h2>
