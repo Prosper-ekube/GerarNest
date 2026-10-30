@@ -26,11 +26,11 @@ const HowItWorks: React.FC = () => {
 
     return (
         <section className='bg-[#1a1a2e] pb-20 pt-10 lg:pt-20 px-6 lg:px-8 text-white' id='how-it-works'>
-            <div className='max-w-6xl mx-auto'>
+            <div className='sm:max-w-md lg:max-w-6xl mx-auto'>
                 <div className='mb-16 text-center'>
                     <span className='font-semibold tracking-wider uppercase text-base text-[#6f4ccf]'>Simple Process</span>
                     <h2 className='mb-4 mt-4 font-bold text-4xl lg:text-4xl'>Get Started in <span className='text-[#6f4ccf]'>3 Easy Steps</span></h2>
-                    <p className='mx-auto max-w-xl text-base text-[#a8a8a8]'>Transform your home into a smart home in minutes with our simple setup process</p>
+                    <p className='mx-auto max-w-md text-base text-[#a8a8a8]'>Transform your home into a smart home in minutes with our simple setup process</p>
                 </div>
                 <div className='gap-12 grid md:grid-cols-3'>
                     {steps.map(({ description, id, number, title }, index) => (

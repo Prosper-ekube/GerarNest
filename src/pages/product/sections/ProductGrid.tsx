@@ -125,9 +125,9 @@ const ProductGrid: React.FC<ProductGridProps> = ({ searchQuery }) => {
     return (
         <section className='py-20 px-6 lg:px-8 bg-[#0a0a0a] overflow-hidden'>
             <div className='max-w-6xl mx-auto'>
-                <div className='grid grid-cols-1 min-[744px]:grid-cols-[280px_minmax(0,1fr)] min-[1204px]:grid-cols-[280px_minmax(0,1fr)] gap-8'>
+                <div className='grid grid-cols-1 min-[744px]:grid-cols-[280px_minmax(0,1fr)] gap-8'>
                     {/* Sidebar */}
-                    <aside className='w-full space-y-6 min-[744px]:sticky min-[744px]:top-8 min-[744px]:self-start'>
+                    <aside className='w-full space-y-6 min-[744px]:sticky min-[744px]:self-start'>
                         <div className='border border-[#6f4ccf]/20 rounded-2xl overflow-hidden bg-[#1a1a2e]'>
                             <div className='p-4'>
                                 <h3 className='font-bold text-base text-white'>
@@ -162,6 +162,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ searchQuery }) => {
                         <ProductSection
                             products={paginatedProducts}
                             cols={3}
+                            responsive
                         />
 
                         {/* Pagination */}

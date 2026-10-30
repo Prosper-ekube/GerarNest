@@ -35,9 +35,9 @@ const Testimonials: React.FC = () => {
                 <div className='mb-16 text-center'>
                     <span className='font-semibold text-sm tracking-wider uppercase text-base text-[#6f4ccf]'>Customer Reviews</span>
                     <h2 className='mt-4 mb-4 font-bold text-4xl lg:text-4xl text-white'>What Our <span className='text-[#6f4ccf]'>Customers Say</span></h2>
-                    <p className='max-w-xl mx-auto text-base text-[#a8a8a8]'>Join thousands of happy customers who have transformed their homes with Gerar Smart Homes</p>
+                    <p className='max-w-md mx-auto text-base text-[#a8a8a8]'>Join thousands of happy customers who have transformed their homes with Gerar Smart Homes</p>
                 </div>
-                <div className='gap-8 grid md:grid-cols-2 lg:grid-cols-3'>
+                <div className='gap-8 grid sm:grid-cols-2 lg:grid-cols-3'>
                     {testimonials.map(({ initials, name, rating, role, text }) => (
                         <div className={card} key={initials}>
                             <div className={starsWrapper}>

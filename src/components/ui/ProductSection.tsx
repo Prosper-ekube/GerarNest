@@ -5,9 +5,14 @@ import ProductCard from './ProductCard'
 type ProductGridProps = {
     products: Product[]
     cols?: 2 | 3 | 4 | 5 | 6
+    responsive?: boolean
 }
 
-const ProductSection: React.FC<ProductGridProps> = ({ products, cols }) => {
+const ProductSection: React.FC<ProductGridProps> = ({
+    products,
+    cols,
+    responsive = false
+}) => {
     const gridColsMap = {
         2: 'lg:grid-cols-2',
         3: 'lg:grid-cols-3',
@@ -16,11 +21,12 @@ const ProductSection: React.FC<ProductGridProps> = ({ products, cols }) => {
         6: 'lg:grid-cols-6'
     }
 
+    const gridClasses = responsive
+        ? 'grid-cols-1 min-[1024px]:grid-cols-2'
+        : `sm:grid-cols-2 ${cols ? gridColsMap[cols] : 'lg:grid-cols-3'}`
+
     return (
-        <div
-            className={`grid gap-6 md:grid-cols-2 ${cols ? gridColsMap[cols] : 'lg:grid-cols-3'
-                }`}
-        >
+        <div className={`grid gap-6 ${gridClasses}`}>
             {products.map(product => (
                 <ProductCard key={product.id} product={product} />
             ))}
