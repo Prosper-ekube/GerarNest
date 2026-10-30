@@ -1,0 +1,245 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$dEvvyY2juYcpFlNw30GlOk$gn8zNpqhuWbYkyvQ6K4h4WajN/L8FEoOqOyZ8OrtNQc=",
+    "last_login": "2026-10-24T06:01:16.337Z",
+    "is_superuser": true,
+    "username": "prosper",
+    "first_name": "",
+    "last_name": "",
+    "email": "prosperekube@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-06T07:19:30.996Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "name": "MixPad S",
+    "price": "370837.50",
+    "category": "smart_panels",
+    "description": "An all-in-one smart home control panel that combines a Zigbee gateway, smart switch, touchscreen interface, voice control, and multi-device automation in a single wall-mounted unit. It supports control of lighting, smart appliances, and scenes through touch, physical buttons, voice, and the ORVIBO Home app. The MixPad S also includes built-in temperature, humidity, light, and proximity sensing.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895388/MixPad_S_ofrzvf.webp",
+    "specs": [
+      "Connectivity: Wi-Fi, Bluetooth, Zigbee 3.0",
+      "Display: 4-inch 480 × 480 Touchscreen",
+      "Power: AC 220V",
+      "Lighting Control: 2-Gang, 200W per Gang",
+      "Voice Control: Dual-Microphone Array, 7m Far-Field Recognition",
+      "Sensors: Temperature, Humidity, Ambient Light, Proximity",
+      "Gateway: Built-in Zigbee Gateway",
+      "Installation: Standard 86-Type Wall Box"
+    ],
+    "in_stock": true,
+    "featured": true,
+    "created_at": "2026-04-12T07:46:21.377Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 12,
+  "fields": {
+    "name": "MixPad M5",
+    "price": "343867.50",
+    "category": "smart_panels",
+    "description": "A smart voice control panel that combines touch-based lighting control, voice assistance, and multi-protocol smart-home connectivity in a single wall-mounted interface. The MixPad M5 supports 4-gang lighting control, dimming and color adjustment, automation scenes, remote app control, and control of compatible curtains, air conditioners, and other smart devices.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895388/MixPad_M5_puxeab.webp",
+    "specs": [
+      "Connectivity: Wi-Fi 2.4GHz/5GHz, Bluetooth, Zigbee",
+      "Power: 220–240V AC, 50/60Hz",
+      "Lighting Control: 4-Gang",
+      "Load Capacity: Max 400W L1/L2, 200W L3/L4",
+      "Voice Control: Built-in Alexa",
+      "Installation: Surface Mount",
+      "Material: Plastic"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-04-13T17:03:10.605Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 14,
+  "fields": {
+    "name": "MixPad Genie",
+    "price": "550000.00",
+    "category": "smart_panels",
+    "description": "A compact smart control panel designed to bring lighting, appliance control, and everyday smart-home functions into one interface. It combines a 3.27-inch HD touchscreen with physical buttons, voice/app control, and multiple wireless protocols, while also supporting Type-C phone charging. ORVIBO lists it as a smart panel for controlling lights and home appliances, with temperature, date, and time display.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895383/MixPad_Genie_ruoxer.webp",
+    "specs": [
+      "Connectivity: Bluetooth Mesh, Wi-Fi, Infrared",
+      "Display: 3.27-inch HD Color Touchscreen",
+      "Light Control: 3-Gang",
+      "Interaction: Voice, Touchscreen, Buttons, App",
+      "Charging: Type-C Mobile Phone Charging",
+      "Power: Zero Live Wire, Two-Terminal Socket, or Data Line"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-04-17T06:47:30.426Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 16,
+  "fields": {
+    "name": "Smoke Sensor SF30",
+    "price": "42702.50",
+    "category": "home_security",
+    "description": "A Zigbee smart smoke sensor designed to continuously monitor for smoke and provide an immediate audible and visual warning when smoke is detected. It can also send alerts through the ORVIBO smart-home app, supports remote mute, and provides low-battery warnings for continuous fire-safety monitoring.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202372/Smoke_Sensor_SF30_mcdr21.webp",
+    "specs": [
+      "Connectivity: Zigbee",
+      "Power: 3V CR123A Battery",
+      "Detection Type: Photoelectric Smoke Detection",
+      "Alarm: 80dB at 3m Built-in Siren",
+      "Wireless Range: Up to 80m",
+      "Low Battery Warning: 2.6V ± 0.2V",
+      "Operating Temperature: -10°C to 55°C",
+      "Installation: Ceiling Mount",
+      "Dimensions: Ø90 × 37mm"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-06-18T12:59:11.747Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 17,
+  "fields": {
+    "name": "Water Leakage Sensor SW30",
+    "price": "35960.00",
+    "category": "home_security",
+    "description": "A compact Zigbee smart water leakage sensor designed to detect water leaks, overflow, and changes in water levels before they cause significant damage. It provides a local light alarm and remote notifications through the ORVIBO smart-home ecosystem, making it suitable for bathrooms, kitchens, utility areas, and other locations where water leakage needs to be monitored. It uses low-power operation and tool-free placement for easy installation.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1787202366/Water_Leakage_Sensor_SW30_iipbtu.png",
+    "specs": [
+      "Connectivity: Zigbee",
+      "Power: 3V CR2032 Battery",
+      "Detection Type: Water Sensor",
+      "Alarm: Local Light Alarm & Remote Push Notification",
+      "Wireless Range: Up to 80m (Open Environment)",
+      "Standby Current: <10µA",
+      "Operating Temperature: -10°C to +55°C",
+      "Installation: Direct Placement in Detection Area",
+      "Dimensions: Ø50 × 18mm"
+    ],
+    "in_stock": true,
+    "featured": true,
+    "created_at": "2026-06-18T13:01:09.222Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 18,
+  "fields": {
+    "name": "MixPad 7 Ultra",
+    "price": "899000.00",
+    "category": "smart_panels",
+    "description": "An all-in-one multi-protocol smart home gateway and central control panel that combines a 7-inch touchscreen with Zigbee 3.0, Wi-Fi, and Bluetooth connectivity. It provides centralized control of lighting and other smart-home devices, includes four built-in high-power lighting control outputs, infrared control for compatible appliances, voice interaction, and integrated stereo background audio.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895383/MixPad_7_Ultra_csoshn.webp",
+    "specs": [
+      "Connectivity: Zigbee 3.0, Wi-Fi, Bluetooth",
+      "Display: 7-inch Touchscreen, 1024 × 600",
+      "Power Supply: AC 100–240V, 50/60Hz",
+      "Built-in Switch: 4-Gang",
+      "Maximum Load: 400W/loop for 1/2 loop; 200W/loop for 3/4 loop",
+      "Audio: 4W Bass + 4W Treble + 2W Midrange",
+      "Dimensions: 237 × 111 × 11.3mm"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-07-22T17:29:02.752Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 19,
+  "fields": {
+    "name": "MixPad X",
+    "price": "1078799.00",
+    "category": "smart_panels",
+    "description": "A full-screen smart home control panel and multi-protocol gateway designed to centralize control of connected devices and smart-home scenes. It features a 12.3-inch panoramic touchscreen, built-in stereo speakers, voice control, and support for Zigbee, Bluetooth, Wi-Fi, and RS485, allowing it to coordinate lighting, appliances, and other smart-home devices from a single wall-mounted interface. ORVIBO states that it can connect up to 300 Zigbee devices and support thousands of devices through gateway cascading.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895390/MixPad_X_f6ha9r.webp",
+    "specs": [
+      "Connectivity: Zigbee, Bluetooth, Wi-Fi, RS485",
+      "Display: 12.3-inch Touchscreen, 1920 × 720 Resolution",
+      "Power: AC 220V",
+      "Lighting Control: 2-Gang, Up to 600W per Circuit",
+      "Audio: 2 × 2.4W Stereo Speakers",
+      "Microphone: Four-Microphone Array, Up to 10m Far-Field Wake-up",
+      "Gateway Capacity: Up to 300 Zigbee Devices",
+      "Installation: Standard 86-Type Wall Box"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-08-19T19:59:10.371Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 20,
+  "fields": {
+    "name": "ZigBee Mini Hub",
+    "price": "74167.50",
+    "category": "smart_panels",
+    "description": "A compact ZigBee smart home hub that connects and manages multiple ORVIBO ZigBee devices, allowing them to work together to create automated smart scenes. It connects to the HomeMate app through your network and serves as the central bridge for compatible sensors, switches, and other ZigBee devices. ORVIBO states that the Mini Hub can support up to 100 ZigBee devices.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895391/ZigBee_Mini_Hub_kqqcth.webp",
+    "specs": [
+      "Connectivity: Zigbee HA, Ethernet",
+      "Power: DC 5V / 1A",
+      "Wireless Frequency: 2.4GHz",
+      "Capacity: Up to 100 Zigbee Devices",
+      "Encryption: AES-128",
+      "Dimensions: 88 × 90 × 27mm",
+      "App Support: ORVIBO HomeMate"
+    ],
+    "in_stock": true,
+    "featured": true,
+    "created_at": "2026-08-19T20:01:05.586Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 22,
+  "fields": {
+    "name": "Multi-functional Relay Switch",
+    "price": "74167.50",
+    "category": "smart_switches",
+    "description": "The ORVIBO Multi-functional Relay Switch enables compatible curtain motors and other supported devices to be integrated into a smart home system. Using Zigbee connectivity, it supports app-based control and automation through customised scenes.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895373/ZigBee_RGB_Relay_iwoxmx.webp",
+    "specs": [
+      "Product Type: Multi-functional Relay Switch",
+      "Connectivity: Zigbee",
+      "Function: Smart Control of Compatible Devices",
+      "Supported Application: Curtain Motor Control",
+      "Control Method: Smartphone App via Compatible Zigbee Hub",
+      "Automation: Smart Scene Linkage",
+      "Application: Smart Home Automation"
+    ],
+    "in_stock": true,
+    "featured": false,
+    "created_at": "2026-08-19T20:18:57.467Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 24,
+  "fields": {
+    "name": "MixSwitch Bach 8 Keys",
+    "price": "94395.00",
+    "category": "smart_switches",
+    "description": "The ORVIBO MixSwitch Bach 8 Keys is an eight-gang Zigbee 3.0 smart wall switch designed to control up to eight lighting circuits. It supports local physical control and smart-home automation through an ORVIBO Zigbee gateway or compatible control panel. The switch uses a metal-button design and is suitable for LED, incandescent, and energy-saving lamps.",
+    "image": "https://res.cloudinary.com/dkdd5pfl0/image/upload/v1786895373/MixSwitch_Bach_Smart_Switch_8_mkzkhq.webp",
+    "specs": [
+      "Connectivity: Zigbee 3.0",
+      "Power Supply: AC 220V, 50/60Hz",
+      "Configuration: 8-Gang",
+      "Maximum Load: 800W per Loop",
+      "Maximum Loops: 8"
